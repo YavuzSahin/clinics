@@ -53,6 +53,11 @@ if($page=='index'){
     $siteBaslik     = "Sayfa Bulunamadı - ".$site->baslik_ic;
     $siteAciklama   = 'aradığınız sayfa saç ekimi forum sunucularımızda bulunamadı. lütfen bağlantınızı kontrol edin.';
     $siteKelime     = $site->kelime;
+}elseif ($page=='outlink'){
+    header('HTTP/1.0 404 Not Found');
+    $siteBaslik     = "Yönlendiriliyorsunuz - ".$site->baslik_ic;
+    $siteAciklama   = 'site dışında bir bağlantıya yönlendiriliyorsunuz lütfen bekleyiniz.! birazdan yönlendirileceksiniz.';
+    $siteKelime     = $site->kelime;
 }
 ob_start('compress_page');
 ?>
