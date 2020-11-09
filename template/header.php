@@ -96,6 +96,7 @@ ob_start('compress_page');
                 <nav id="mainmenu" class="navbar-left collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="home"><a href="/">Anasayfa</a></li>
+                        <li class="technology"><a href="/turkiye-sac-ekimi-merkezleri.html">Türkiye Saç Ekimi Merkezleri</a></li>
                         <li class="environment"><a href="/istanbul-sac-ekimi-merkezleri.html">İstanbul Saç Ekimi Merkezleri</a></li>
                         <li class="lifestyle"><a href="/ankara-sac-ekimi-merkezleri.html">Ankara Saç Ekimi Merkezleri</a></li>
                         <li class="sports"><a href="/izmir-sac-ekimi-merkezleri.html">İzmir Saç Ekimi Merkezleri</a></li>
