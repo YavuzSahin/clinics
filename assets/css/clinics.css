@@ -1,0 +1,57 @@
+.clinics{}
+.clinics .tr-sticky{padding: 0;margin: 0;}
+.clinics .tr-sticky .widget{border-radius: 5px;background: #fff;padding: 10px;margin: 0;}
+.clinics .tr-sticky .widget .section-title {margin-top: 5px;margin-bottom: 0 !important;padding-bottom: 0;position: relative;font-size: 14px;text-transform: none;color: #525b6e;font-weight: 600;}
+.clinics .tr-sticky .widget h3 {padding: 0;margin: 0;font-weight: 300;color: #000;font-size: 18px;}
+.clinics .tr-sticky .widget .section-title:before, .clinics .tr-sticky .widget .section-title:after {position: absolute;content: "";bottom: -25px;left: 0;height: 2px;}
+.clinics .widget ul {border: 0 solid transparent;list-style: none;margin: 10px 0;padding: 3px 0;}
+.clinics .widget ul li{border-top: 0 solid transparent;border-bottom: 1px solid #eee;padding: 5px;
+    -webkit-transition: all 900ms ease-in-out;
+    -moz-transition: all 900ms ease-in-out;
+    -ms-transition: all 900ms ease-in-out;
+    -o-transition: all 900ms ease-in-out;
+    transition: all 900ms ease-in-out;}
+.clinics .widget ul li:hover{border-top: 0 solid transparent;border-bottom: 1px solid #eee;padding: 5px 10px;
+    -webkit-transition: all 900ms ease-in-out;
+    -moz-transition: all 900ms ease-in-out;
+    -ms-transition: all 900ms ease-in-out;
+    -o-transition: all 900ms ease-in-out;
+    transition: all 900ms ease-in-out;}
+.clinics .widget ul li .entry-title{font-size: 14px; color: #1f1f1f;}
+.clinics .left-content h3{font-size: 18px; color: #1f1f1f;font-weight: 300;float:left;position:relative;}
+.clinics .left-content h3 span{font-size: 18px; color: #1f1f1f;font-weight: 900;}
+.clinics .list-clinics{padding: 0;margin: 10px 0 0 0;list-style: none;}
+.clinics .list-clinics .list-clinic{float:left;position:relative;padding: 10px;margin: 5px 0;list-style: none;border: 2px solid #eff3f6;border-radius: 5px;width: 100%;background-color: #fff;}
+.clinics .list-clinics .list-clinic.sponsorlu{border: 2px solid #00a98f;background-color: #fff9ea;}
+.clinics .list-clinics .list-clinic.sponsorlu::before {
+    position: absolute;
+    left: 5px !important;
+    top: 0;
+    width: 5% !important;
+    font-family: "Font Awesome 5 Free";
+    content: '\f005';
+    color: #fdbd10;
+    font-size: 32px;
+    z-index: 10;
+}
+.clinics .list-clinics .list-clinic.sponsorlu::after {
+    position: absolute;
+    left: 10px;
+    border-radius: 5px;
+    top: 8px;
+    width: 30%;
+    content: 'Yüksek puanlı saç ekimi merkezi';
+    color: #00a98f;
+    font-size: 13px;
+    font-weight: bold;
+    background: #fff;
+    padding: 10px 0px 0 30px;
+}
+.clinics .list-clinics .list-clinic .img{border-right: 1px solid #eee;}
+.clinics .list-clinics .list-clinic .info{}
+.clinics .list-clinics .list-clinic .info h3{font-weight: 900;font-size: 18px;}
+.clinics .list-clinics .list-clinic .info h3 a{color:#323b43;}
+.clinics .list-clinics .list-clinic .info h3 i{color:#fdbd10; font-size: 12px;top:-5px;}
+
+.clinics .list-clinics .list-clinic .info p{font-weight: 300;font-size: 13px;padding: 0;margin: 0}
+.clinics .list-clinics .list-clinic .info .btn{font-weight: 400;font-size: 14px;padding: 5px 10px;margin: 0}
