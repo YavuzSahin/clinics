@@ -16,7 +16,7 @@
                 <h3>Saç Ekimi Merkezleri</h3>
                 <ul class="post-list">
                     <?php
-                    $cities = $db->table('sehir')->where('city', $pageInfo->id)->orderBy('id', 'ASC')->getAll();
+                    $cities = $db->table('ilce')->where('sehirID', $pageInfo->id)->orderBy('id', 'ASC')->getAll();
                     foreach ($cities as $city){
                         ?>
                         <li>
@@ -24,8 +24,8 @@
                                 <div class="post-content-two">
                                     <h3 class="entry-title">
                                         <i class="fa fa-angle-right"></i>
-                                        <a href="<?=$site->url;?>/<?=seoUrl($city->sehir.'-sac-ekimi-merkezleri')?>.html">
-                                            <?=$city->sehir;?> saç ekimi
+                                        <a href="<?=$site->url;?>/<?=seoUrl($city->ilce.'-sac-ekimi-merkezleri')?>.html">
+                                            <?=$city->ilce;?> saç ekimi
                                         </a>
                                     </h3>
                                 </div>
