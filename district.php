@@ -1,8 +1,4 @@
-<?php require 'template/header.php';
-echo $page."<br>";
-echo $_GET['url']."<br>";
-print_r($pageInfo);
-?>
+<?php require 'template/header.php'; ?>
 <div class="container clinics">
     <div class="page-breadcrumbs">
         <h1 class="section-title"><?=$siteBaslikic;?></h1>
@@ -73,9 +69,9 @@ print_r($pageInfo);
                                     <p><?=substr(strip_tags($clinic->hakkinda), 0, 255);?></p>
                                     <p><i class="fas fa-map-marker-alt"></i> <?=sehir($clinic->city);?> | <?=ilce($clinic->district);?></p>
                                     <div class="btn-group">
-                                        <div class="btn btn-success"><i class="fas fa-phone-volume"></i> Telefon</div>
-                                        <div class="btn btn-warning"><i class="fas fa-envelope-open-text"></i> E-Mail Gönder</div>
-                                        <div class="btn btn-info"><i class="fas fa-money-bill-wave"></i> Fiyat Talep Et</div>
+                                        <div class="btn btn-success"><a href="<?=$site->url;?>/outlink/phone/<?=$pageInfo->id;?>" target="_blank"><i class="fas fa-phone-volume"></i> Telefon</a></div>
+                                        <div class="btn btn-warning"><a href="<?=$site->url;?>/outlink/whatsapp/<?=$pageInfo->id;?>" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp ile Ulaş</a></div>
+                                        <div class="btn btn-info"><a href="<?=$site->url;?>/outlink/whatsapp/<?=$pageInfo->id;?>" target="_blank"><i class="fas fa-money-bill-wave"></i> Fiyat Talep Et</a></div>
                                     </div>
                                 </div>
                             </li>
@@ -94,9 +90,9 @@ print_r($pageInfo);
                                     <p><?=substr(strip_tags($clinic->hakkinda), 0, 255);?></p>
                                     <p><i class="fas fa-map-marker-alt"></i> <?=sehir($clinic->city);?> | <?=ilce($clinic->district);?></p>
                                     <div class="btn-group">
-                                        <div class="btn btn-success"><i class="fas fa-phone-volume"></i> Telefon</div>
-                                        <div class="btn btn-warning"><i class="fas fa-envelope-open-text"></i> E-Mail Gönder</div>
-                                        <div class="btn btn-info"><i class="fas fa-money-bill-wave"></i> Fiyat Talep Et</div>
+                                        <div class="btn btn-success"><a href="<?=$site->url;?>/outlink/phone/<?=$pageInfo->id;?>" target="_blank"><i class="fas fa-phone-volume"></i> Telefon</a></div>
+                                        <div class="btn btn-warning"><a href="<?=$site->url;?>/outlink/whatsapp/<?=$pageInfo->id;?>" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp ile Ulaş</a></div>
+                                        <div class="btn btn-info"><a href="<?=$site->url;?>/outlink/whatsapp/<?=$pageInfo->id;?>" target="_blank"><i class="fas fa-money-bill-wave"></i> Fiyat Talep Et</a></div>
                                     </div>
                                 </div>
                             </li>
