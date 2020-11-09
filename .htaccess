@@ -14,6 +14,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^index.html$ index.php [L,QSA]
 RewriteRule ^error.html error.php [L,QSA]
 RewriteRule ^(.*)-sac-ekimi-merkezleri.html$ city.php?url=$1 [L,QSA]
+RewriteRule ^ilce/(.*)-sac-ekimi-merkezleri.html$ district.php?url=$1 [L,QSA]
 RewriteRule ^sac-ekimi-merkezi/(.*).html$ clinic-detail.php?url=$1 [L,QSA]
 RewriteRule ^etiket/(.*).html$ tags.php?url=$1 [L,QSA]
 RewriteRule ^site-haritasi.html$ sitemap.php [L,QSA]

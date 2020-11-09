@@ -12,39 +12,12 @@
     </div>
     <div class="col-md-4 col-lg-3 float-left tr-sticky">
         <div id="sitebar" class="theiaStickySidebar">
-            <?php
-                if($pageInfo->plaka==99){
-            ?>
-            <div class="widget">
-                <h2 class="section-title title">İllere Göre</h2>
-                <h3>Saç Ekimi Merkezleri</h3>
-                <ul class="post-list">
-                    <?php
-                    $cities = $db->table('sehir')->orderBy('id', 'ASC')->getAll();
-                    foreach ($cities as $city){
-                        ?>
-                        <li>
-                            <div class="post small-post">
-                                <div class="post-content-two">
-                                    <h3 class="entry-title">
-                                        <i class="fa fa-angle-right"></i>
-                                        <a href="<?=$site->url;?>/<?=seoUrl($city->sehir.'-sac-ekimi-merkezleri')?>.html">
-                                            <?=$city->sehir;?> saç ekimi
-                                        </a>
-                                    </h3>
-                                </div>
-                            </div><!--/post-->
-                        </li>
-                    <?php } ?>
-                </ul>
-            </div>
-            <?php }else{?>
                     <div class="widget">
                         <h2 class="section-title title">İlçelere Göre</h2>
                         <h3>Saç Ekimi Merkezleri</h3>
                         <ul class="post-list">
                             <?php
-                            $cities = $db->table('ilce')->where('sehirID', $pageInfo->id)->orderBy('id', 'ASC')->getAll();
+                            $cities = $db->table('ilce')->where('sehirID', $pageInfo->sehirID)->orderBy('id', 'ASC')->getAll();
                             foreach ($cities as $city){
                                 ?>
                                 <li>
@@ -62,7 +35,6 @@
                             <?php } ?>
                         </ul>
                     </div>
-            <?php }?>
         </div>
     </div>
     <div class="col-md-8 col-lg-9 float-right">
@@ -76,7 +48,7 @@
                         if($pageInfo->plaka==99) {
                             $clinicsN = $db->table('merkez')->notIn('id', $ids)->getAll();
                         }else{
-                            $clinicsN = $db->table('merkez')->notIn('id', $ids)->where('city', $pageInfo->plaka)->getAll();
+                            $clinicsN = $db->table('merkez')->notIn('id', $ids)->where('district', $pageInfo->plaka)->getAll();
                         }
                         $count      = count($clinics)+count($clinicsN);
                         ?>
