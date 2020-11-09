@@ -20,7 +20,7 @@ if($actual_link==$site->url.'/index.html'){
 }
 if($page=='index'){
     $siteBaslik     = $site->baslik;
-    $siteBaslikic   = $site->baslikic;
+    $siteBaslikic   = $site->baslik_ic;
     $siteAciklama   = $site->aciklama;
     $siteKelime     = $site->kelime;
 }elseif($page=='page'){
@@ -40,13 +40,6 @@ if($page=='index'){
     $pageInfo = $db->table('etiket')->where('url', $_GET['url'])->get();
     $siteBaslik     = $pageInfo->baslik." etiketi - ".$site->baslik_ic;
     $siteAciklama   = $pageInfo->aciklama;
-    $siteKelime     = $site->kelime;
-}elseif ($page=='search'){
-    $q = $_GET['q'];
-    //$pageInfo = $db->table('etiket')->where('url', $_GET['url'])->get();
-    $siteBaslik     = $q." için arama sonuçları - ".$site->baslik_ic;
-    $baslik         = $q." için arama sonuçları";
-    $siteAciklama   = $q.' araması için saç ekimi forum sitesinde bulunan içerikler.'.$q.' arama sonuçlarına ulaşabilirsiniz.';
     $siteKelime     = $site->kelime;
 }elseif ($page=='error'){
     header('HTTP/1.0 404 Not Found');
