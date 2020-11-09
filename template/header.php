@@ -31,10 +31,10 @@ if($page=='index'){
     $siteBaslik     = $pageInfo->baslik." - ".$site->baslik_ic;
     $siteAciklama   = $pageInfo->aciklama;
     $siteKelime     = $site->kelime;
-}elseif ($page=='category'){
-    $pageInfo = $db->table('kategori')->where('url', $_GET['url'])->get();
-    $siteBaslik     = $pageInfo->baslik." kategorisi - ".$site->baslik_ic;
-    $siteAciklama   = $pageInfo->aciklama;
+}elseif ($page=='city'){
+    $pageInfo = $db->table('sehir')->where('url', $_GET['url'])->get();
+    $siteBaslik     = $pageInfo->baslik." - ".$site->baslik_ic;
+    $siteAciklama   = $pageInfo->baslik.", ".$site->aciklama;
     $siteKelime     = $site->kelime;
 }elseif ($page=='tags'){
     $pageInfo = $db->table('etiket')->where('url', $_GET['url'])->get();
