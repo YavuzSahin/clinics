@@ -54,7 +54,14 @@ if($page=='index'){
     $siteAciklama   = 'aradığınız sayfa saç ekimi forum sunucularımızda bulunamadı. lütfen bağlantınızı kontrol edin.';
     $siteKelime     = $site->kelime;
 }elseif ($page=='outlink'){
-    header('HTTP/1.0 404 Not Found');
+
+    if($_GET['type']=='phone') {
+        $pageInfo = $db->table('merkez')->where('id', $_GET['id'])->get();
+        header('Refresh:2; tel:'.$pageInfo->telefon);
+    }elseif($_GET['type']=='whatsapp') {
+        $pageInfo = $db->table('merkez')->where('id', $_GET['id'])->get();
+        header('Refresh:2; https://api.whatsapp.com/send/?phone='.$pageInfo->whatsapp.'&text=merhaba, saç ekimi hakkında bilgi alabilir miyim? numaranızı '.$site->baslik_ic.' sitesinden aldım. &app_absent=0');
+    }
     $siteBaslik     = "Yönlendiriliyorsunuz - ".$site->baslik_ic;
     $siteAciklama   = 'site dışında bir bağlantıya yönlendiriliyorsunuz lütfen bekleyiniz.! birazdan yönlendirileceksiniz.';
     $siteKelime     = $site->kelime;
