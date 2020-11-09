@@ -60,7 +60,7 @@ if($page=='index'){
         header('Refresh:2; tel:'.$pageInfo->telefon);
     }elseif($_GET['type']=='whatsapp') {
         $pageInfo = $db->table('merkez')->where('id', $_GET['id'])->get();
-        header('Refresh:2; https://api.whatsapp.com/send/?phone='.$pageInfo->whatsapp.'&text='.urlencode('merhaba, saç ekimi hakkında bilgi alabilir miyim? numaranızı '.$site->baslik_ic.' sitesinden aldım.').'&app_absent=0');
+        header('Refresh:2; https://api.whatsapp.com/send/?phone='.$pageInfo->whatsapp.'&text='.urlencode('merhaba, saç ekimi hakkında bilgi alabilir miyim? numaranızı *'.$site->baslik_ic.'* sitesinden aldım.').'&app_absent=0');
     }
     $siteBaslik     = "Yönlendiriliyorsunuz - ".$site->baslik_ic;
     $siteAciklama   = 'site dışında bir bağlantıya yönlendiriliyorsunuz lütfen bekleyiniz.! birazdan yönlendirileceksiniz.';
