@@ -33,8 +33,9 @@ if($page=='index'){
     $siteKelime     = $site->kelime;
 }elseif ($page=='city'){
     $pageInfo = $db->table('sehir')->where('url', $_GET['url'])->get();
-    $siteBaslik     = $pageInfo->baslik." - ".$site->baslik_ic;
-    $siteAciklama   = $pageInfo->baslik.", ".$site->aciklama;
+    $siteBaslik     = $pageInfo->sehir." saç ekimi merkezleri - ".$site->baslik_ic;
+    $siteBaslik     = $pageInfo->sehir." saç ekimi merkezleri";
+    $siteAciklama   = $pageInfo->sehir." saç ekimi merkezleri, ".$pageInfo->sehir." saç ekimi merkezlerinin listelendiği, saç ekimi bilgi, saç ekimi şikayet ve saç ekimi yorumların yer aldığı listelemedir.";
     $siteKelime     = $site->kelime;
 }elseif ($page=='tags'){
     $pageInfo = $db->table('etiket')->where('url', $_GET['url'])->get();
