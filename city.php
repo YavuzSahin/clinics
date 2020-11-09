@@ -73,7 +73,11 @@
                         <?php
                         $clinics    = $db->table('merkez')->where('sponsorlu', 1)->getAll();
                         foreach ($clinics as $cli){$ids[] = $cli->id;}
-                        $clinicsN   = $db->table('merkez')->notIn('id', $ids)->where('city', $pageInfo->plaka)->getAll();
+                        if($pageInfo->plaka==99) {
+                            $clinicsN = $db->table('merkez')->notIn('id', $ids)->getAll();
+                        }else{
+                            $clinicsN = $db->table('merkez')->notIn('id', $ids)->where('city', $pageInfo->plaka)->getAll();
+                        }
                         $count      = count($clinics)+count($clinicsN);
                         ?>
                         <h3>Ön Plana Çıkan <u><b><?=$count;?></b></u> <span><?=$siteBaslikic;?></span></h3>
