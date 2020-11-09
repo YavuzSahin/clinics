@@ -1,5 +1,7 @@
 <?php require 'template/header.php';
-echo $page;
+echo $page."<br>";
+echo $_GET['url']."<br>";
+print_r($pageInfo);
 ?>
 <div class="container clinics">
     <div class="page-breadcrumbs">
