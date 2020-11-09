@@ -58,7 +58,7 @@
                         foreach ($clinics as $clinic){
                             ?>
                             <li class="list-clinic <?php if($clinic->sponsorlu==1){?>sponsorlu<?php } ?>">
-                                <div class="col-md-4 col-sm-6 img float-left">
+                                <div class="col-md-4 col-sm-6 img float-left imgback">
                                     <img itemprop="image" class="img-fluid" src="<?=$site->cdnurl;?>/upload/resized/<?=$clinic->logo;?>" width="871" height="497" alt="<?=$clinic->baslik;?>" />
                                 </div>
                                 <div class="col-md-8 col-sm-6 info float-right">
@@ -79,7 +79,7 @@
                         foreach ($clinicsN as $clinic){
                             ?>
                             <li class="list-clinic <?php if($clinic->sponsorlu==1){?>sponsorlu<?php } ?>">
-                                <div class="col-md-4 col-sm-6 img float-left">
+                                <div class="col-md-4 col-sm-6 img float-left imgback">
                                     <img itemprop="image" class="img-fluid" src="<?=$site->cdnurl;?>/upload/resized/<?=$clinic->logo;?>" width="871" height="497" alt="<?=$clinic->baslik;?>" />
                                 </div>
                                 <div class="col-md-8 col-sm-6 info float-right">
