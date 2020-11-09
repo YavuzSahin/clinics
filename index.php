@@ -24,8 +24,8 @@
                                 <div class="post-content-two">
                                     <h3 class="entry-title">
                                         <i class="fa fa-angle-right"></i>
-                                        <a href="<?=$site->url;?>/<?=seoUrl($city.'-sac-ekimi-merkezleri')?>.html">
-                                            <?=$city->baslik;?> saç ekimi
+                                        <a href="<?=$site->url;?>/<?=seoUrl($city->sehir.'-sac-ekimi-merkezleri')?>.html">
+                                            <?=$city->sehir;?> saç ekimi
                                         </a>
                                     </h3>
                                 </div>
