@@ -72,7 +72,8 @@
                     <div class="left-content">
                         <?php
                         $clinics    = $db->table('merkez')->where('sponsorlu', 1)->getAll();
-                        $clinicsN   = $db->table('merkez')->where('city', $pageInfo->plaka)->getAll();
+                        foreach ($clinics as $cli){$ids[] = $cli->id;}
+                        $clinicsN   = $db->table('merkez')->notIn('id', $ids)->where('city', $pageInfo->plaka)->getAll();
                         $count      = count($clinics)+count($clinicsN);
                         ?>
                         <h3>Ön Plana Çıkan <u><b><?=$count;?></b></u> <span><?=$siteBaslikic;?></span></h3>
