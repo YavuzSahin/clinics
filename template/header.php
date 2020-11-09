@@ -20,6 +20,7 @@ if($actual_link==$site->url.'/index.html'){
 }
 if($page=='index'){
     $siteBaslik     = $site->baslik;
+    $siteBaslikic   = $site->baslikic;
     $siteAciklama   = $site->aciklama;
     $siteKelime     = $site->kelime;
 }elseif($page=='page'){
