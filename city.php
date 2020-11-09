@@ -1,4 +1,6 @@
-<?php require 'template/header.php';?>
+<?php require 'template/header.php';
+echo $page;
+?>
 <div class="container clinics">
     <div class="page-breadcrumbs">
         <h1 class="section-title"><?=$siteBaslikic;?></h1>
