@@ -54,7 +54,6 @@ if($page=='index'){
     $siteAciklama   = 'aradığınız sayfa saç ekimi forum sunucularımızda bulunamadı. lütfen bağlantınızı kontrol edin.';
     $siteKelime     = $site->kelime;
 }elseif ($page=='outlink'){
-
     if($_GET['type']=='phone') {
         $pageInfo = $db->table('merkez')->where('id', $_GET['id'])->get();
         header('Refresh:2; tel:'.$pageInfo->telefon);

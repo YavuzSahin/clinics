@@ -59,3 +59,27 @@
 .clinics .btn-group a{color: #fff;font-weight: 700;}
 .pt-50{padding-top: 100px;}
 .pb-50{padding-bottom: 100px;}
+
+@media (max-width: 992px) {
+    .clinics .listdiv {
+        padding: 0;
+        margin-top: 10px;
+    }
+    .clinics .list-clinics .list-clinic.sponsorlu::after {
+        width: 95%;
+        line-height: 20px;
+    }
+    .clinics .btn-group, .btn-group-vertical{margin-top: 5px;display: block !important;}
+    .clinics .list-clinics .list-clinic .info .btn {
+        font-weight: 400;
+        font-size: 14px;
+        padding: 5px 10px;
+        margin: 0;
+        float: left;
+        width: 100%;
+        position: relative;
+        margin: 5px 0 0;
+        border-radius: 5px;
+    }
+}
+.imgback{width: 100%;min-height: 120px;background-color: #fcf8e3;border-radius: 5px;}

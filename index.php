@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-8 col-lg-9 float-right">
+    <div class="col-md-8 col-lg-9 float-right listdiv">
         <div id="site-content" class="site-content">
             <div class="row">
                 <div class="col">
@@ -51,7 +51,7 @@
                         foreach ($clinics as $clinic){
                             ?>
                             <li class="list-clinic <?php if($clinic->sponsorlu==1){?>sponsorlu<?php } ?>">
-                                <div class="col-md-4 col-sm-6 img float-left">
+                                <div class="col-md-4 col-sm-6 img float-left imgback">
                                     <img itemprop="image" class="img-fluid" src="<?=$site->cdnurl;?>/upload/resized/<?=$clinic->logo;?>" width="871" height="497" alt="<?=$clinic->baslik;?>" />
                                 </div>
                                 <div class="col-md-8 col-sm-6 info float-right">
@@ -62,9 +62,9 @@
                                     <p><?=substr(strip_tags($clinic->hakkinda), 0, 255);?></p>
                                     <p><i class="fas fa-map-marker-alt"></i> <?=sehir($clinic->city);?> | <?=ilce($clinic->district);?></p>
                                     <div class="btn-group">
-                                        <div class="btn btn-success"><a href="<?=$site->url;?>/outlink/phone/<?=$pageInfo->id;?>" target="_blank"><i class="fas fa-phone-volume"></i> Telefon</a></div>
-                                        <div class="btn btn-warning"><a href="<?=$site->url;?>/outlink/whatsapp/<?=$pageInfo->id;?>" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp ile Ulaş</a></div>
-                                        <div class="btn btn-info"><a href="<?=$site->url;?>/outlink/whatsapp/<?=$pageInfo->id;?>" target="_blank"><i class="fas fa-money-bill-wave"></i> Fiyat Talep Et</a></div>
+                                        <div class="btn btn-success"><a href="<?=$site->url;?>/outlink/phone/<?=$clinic->id;?>" target="_blank"><i class="fas fa-phone-volume"></i> Telefon</a></div>
+                                        <div class="btn btn-warning"><a href="<?=$site->url;?>/outlink/whatsapp/<?=$clinic->id;?>" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp ile Ulaş</a></div>
+                                        <div class="btn btn-info"><a href="<?=$site->url;?>/outlink/whatsapp/<?=$clinic->id;?>" target="_blank"><i class="fas fa-money-bill-wave"></i> Fiyat Talep Et</a></div>
                                     </div>
                                 </div>
                             </li>
