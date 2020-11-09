@@ -1,10 +1,10 @@
 <?php require_once 'template/header.php';?>
 <div class="container text-center pt-50 pb-50">
-    <div class="loadingio-spinner-spin-90f5dtxba7s"><div class="ldio-7qk6yutvtsa">
+    <div class="loadingio-spinner-spin-f3vnkxn52tn"><div class="ldio-sgv279djvgs">
             <div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div>
         </div></div>
     <style type="text/css">
-        @keyframes ldio-7qk6yutvtsa {
+        @keyframes ldio-sgv279djvgs {
             0% {
                 opacity: 1;
                 backface-visibility: hidden;
@@ -15,86 +15,86 @@
                   transform: translateZ(0) scale(1,1);
               }
         }
-        .ldio-7qk6yutvtsa div > div {
+        .ldio-sgv279djvgs div > div {
             position: absolute;
-            width: 24px;
-            height: 24px;
+            width: 12.48px;
+            height: 12.48px;
             border-radius: 50%;
-            background: #215d38;
-            animation: ldio-7qk6yutvtsa 1s linear infinite;
-        }.ldio-7qk6yutvtsa div:nth-child(1) > div {
-             left: 148px;
-             top: 88px;
-             animation-delay: -0.875s;
+            background: #a00816;
+            animation: ldio-sgv279djvgs 0.9803921568627451s linear infinite;
+        }.ldio-sgv279djvgs div:nth-child(1) > div {
+             left: 76px;
+             top: 46px;
+             animation-delay: -0.8578431372549019s;
          }
-        .ldio-7qk6yutvtsa > div:nth-child(1) {
+        .ldio-sgv279djvgs > div:nth-child(1) {
             transform: rotate(0deg);
-            transform-origin: 160px 100px;
-        }.ldio-7qk6yutvtsa div:nth-child(2) > div {
-             left: 130px;
-             top: 130px;
-             animation-delay: -0.75s;
+            transform-origin: 82.24000000000001px 52.24px;
+        }.ldio-sgv279djvgs div:nth-child(2) > div {
+             left: 67px;
+             top: 67px;
+             animation-delay: -0.7352941176470588s;
          }
-        .ldio-7qk6yutvtsa > div:nth-child(2) {
+        .ldio-sgv279djvgs > div:nth-child(2) {
             transform: rotate(45deg);
-            transform-origin: 142px 142px;
-        }.ldio-7qk6yutvtsa div:nth-child(3) > div {
-             left: 88px;
-             top: 148px;
-             animation-delay: -0.625s;
+            transform-origin: 73.24000000000001px 73.24000000000001px;
+        }.ldio-sgv279djvgs div:nth-child(3) > div {
+             left: 46px;
+             top: 76px;
+             animation-delay: -0.6127450980392157s;
          }
-        .ldio-7qk6yutvtsa > div:nth-child(3) {
+        .ldio-sgv279djvgs > div:nth-child(3) {
             transform: rotate(90deg);
-            transform-origin: 100px 160px;
-        }.ldio-7qk6yutvtsa div:nth-child(4) > div {
-             left: 46px;
-             top: 130px;
-             animation-delay: -0.5s;
+            transform-origin: 52.24px 82.24000000000001px;
+        }.ldio-sgv279djvgs div:nth-child(4) > div {
+             left: 24px;
+             top: 67px;
+             animation-delay: -0.49019607843137253s;
          }
-        .ldio-7qk6yutvtsa > div:nth-child(4) {
+        .ldio-sgv279djvgs > div:nth-child(4) {
             transform: rotate(135deg);
-            transform-origin: 58px 142px;
-        }.ldio-7qk6yutvtsa div:nth-child(5) > div {
-             left: 28px;
-             top: 88px;
-             animation-delay: -0.375s;
+            transform-origin: 30.240000000000002px 73.24000000000001px;
+        }.ldio-sgv279djvgs div:nth-child(5) > div {
+             left: 16px;
+             top: 46px;
+             animation-delay: -0.3676470588235294s;
          }
-        .ldio-7qk6yutvtsa > div:nth-child(5) {
+        .ldio-sgv279djvgs > div:nth-child(5) {
             transform: rotate(180deg);
-            transform-origin: 40px 100px;
-        }.ldio-7qk6yutvtsa div:nth-child(6) > div {
-             left: 46px;
-             top: 46px;
-             animation-delay: -0.25s;
+            transform-origin: 22.240000000000002px 52.24px;
+        }.ldio-sgv279djvgs div:nth-child(6) > div {
+             left: 24px;
+             top: 24px;
+             animation-delay: -0.24509803921568626s;
          }
-        .ldio-7qk6yutvtsa > div:nth-child(6) {
+        .ldio-sgv279djvgs > div:nth-child(6) {
             transform: rotate(225deg);
-            transform-origin: 58px 58px;
-        }.ldio-7qk6yutvtsa div:nth-child(7) > div {
-             left: 88px;
-             top: 28px;
-             animation-delay: -0.125s;
+            transform-origin: 30.240000000000002px 30.240000000000002px;
+        }.ldio-sgv279djvgs div:nth-child(7) > div {
+             left: 46px;
+             top: 16px;
+             animation-delay: -0.12254901960784313s;
          }
-        .ldio-7qk6yutvtsa > div:nth-child(7) {
+        .ldio-sgv279djvgs > div:nth-child(7) {
             transform: rotate(270deg);
-            transform-origin: 100px 40px;
-        }.ldio-7qk6yutvtsa div:nth-child(8) > div {
-             left: 130px;
-             top: 46px;
+            transform-origin: 52.24px 22.240000000000002px;
+        }.ldio-sgv279djvgs div:nth-child(8) > div {
+             left: 67px;
+             top: 24px;
              animation-delay: 0s;
          }
-        .ldio-7qk6yutvtsa > div:nth-child(8) {
+        .ldio-sgv279djvgs > div:nth-child(8) {
             transform: rotate(315deg);
-            transform-origin: 142px 58px;
+            transform-origin: 73.24000000000001px 30.240000000000002px;
         }
-        .loadingio-spinner-spin-90f5dtxba7s {
-            width: 200px;
-            height: 200px;
+        .loadingio-spinner-spin-f3vnkxn52tn {
+            width: 104px;
+            height: 104px;
             display: inline-block;
             overflow: hidden;
-            background: #f1f2f3;
+            background: none;
         }
-        .ldio-7qk6yutvtsa {
+        .ldio-sgv279djvgs {
             width: 100%;
             height: 100%;
             position: relative;
@@ -102,10 +102,10 @@
             backface-visibility: hidden;
             transform-origin: 0 0; /* see note above */
         }
-        .ldio-7qk6yutvtsa div { box-sizing: content-box; }
+        .ldio-sgv279djvgs div { box-sizing: content-box; }
         /* generated by https://loading.io/ */
     </style>
-    <br>
+   <br>
     site dışında bir bağlantıya yönlendiriliyorsunuz lütfen bekleyiniz!<br>birazdan yönlendirileceksiniz.
 </div>
 <?php require_once 'template/footer.php';?>
