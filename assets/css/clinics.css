@@ -17,7 +17,7 @@
     -ms-transition: all 900ms ease-in-out;
     -o-transition: all 900ms ease-in-out;
     transition: all 900ms ease-in-out;}
-.clinics .widget ul li .entry-title{font-size: 14px; color: #1f1f1f;}
+.clinics .widget ul li .entry-title{font-size: 14px; color: #1f1f1f;line-height: 18px;}
 .clinics .left-content h3{font-size: 18px; color: #1f1f1f;font-weight: 300;float:left;position:relative;}
 .clinics .left-content h3 span{font-size: 18px; color: #1f1f1f;font-weight: 900;}
 .clinics .list-clinics{padding: 0;margin: 10px 0 0 0;list-style: none;}
