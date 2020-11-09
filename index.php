@@ -12,20 +12,20 @@
     <div class="col-md-4 col-lg-3 float-left tr-sticky">
         <div id="sitebar" class="theiaStickySidebar">
             <div class="widget">
-                <h2 class="section-title title">İlçelere Göre</h2>
+                <h2 class="section-title title">İllere Göre</h2>
                 <h3>Saç Ekimi Merkezleri</h3>
                 <ul class="post-list">
                     <?php
-                    $istanbulKonulari = $db->table('sayfa')->where('kategori', 2)->limit(20)->orderBy('guncellenme_tarihi', 'desc')->getAll();
-                    foreach ($istanbulKonulari as $istanbulkonu){
+                    $cities = $db->table('sehir')->orderBy('id', 'ASC')->getAll();
+                    foreach ($cities as $city){
                         ?>
                         <li>
                             <div class="post small-post">
                                 <div class="post-content-two">
                                     <h3 class="entry-title">
                                         <i class="fa fa-angle-right"></i>
-                                        <a href="<?=$site->url;?>/<?=kategoriUrlSayfa($istanbulkonu->kategori);?>/<?=$istanbulkonu->url;?>.html">
-                                            <?=$istanbulkonu->baslik;?>
+                                        <a href="<?=$site->url;?>/<?=seoUrl($city.'-sac-ekimi-merkezleri')?>.html">
+                                            <?=$city->baslik;?> saç ekimi
                                         </a>
                                     </h3>
                                 </div>
