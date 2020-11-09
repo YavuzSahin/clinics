@@ -54,7 +54,6 @@ ob_start('compress_page');
 <head>
     <link rel="canonical" href="<?=$actual_link;?>"/>
     <link rel="amphtml" href="<?=$actual_link_amp;?>">
-
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
@@ -80,22 +79,22 @@ ob_start('compress_page');
     <header id="navigation">
         <div class="navbar navbar-expand-lg" role="banner">
             <div class="container">
-                <a class="secondary-logo" href=""><span class="color">saç ekimi</span> merkezi</a>
+                <a class="secondary-logo" href="<?=$site->url;?>/"><span class="color">Saç ekimi</span> merkezi</a>
             </div>
             <div class="topbar">
                 <div class="container">
                     <div id="topbar" class="navbar-header">
-                        <a class="navbar-brand" href=""><span class="color">saç ekimi</span> merkezi</a>
+                        <a class="navbar-brand" href="<?=$site->url;?>/"><span class="color">Saç ekimi</span> merkezi</a>
                         <div id="topbar-right"></div>
                     </div>
                 </div>
             </div>
             <div id="menubar" class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa fa-align-justify"></i></span> </button>
-                <a class="navbar-brand d-lg-none" href=""><span class="color">saç ekimi</span> merkezi</a>
+                <a class="navbar-brand d-lg-none" href="<?=$site->url;?>/"><span class="color">Saç ekimi</span> merkezi</a>
                 <nav id="mainmenu" class="navbar-left collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="home"><a href="/">Anasayfa</a></li>
+                        <li class="home"><a href="<?=$site->url;?>/">Anasayfa</a></li>
                         <li class="technology"><a href="/turkiye-sac-ekimi-merkezleri.html">Türkiye Saç Ekimi Merkezleri</a></li>
                         <li class="environment"><a href="/istanbul-sac-ekimi-merkezleri.html">İstanbul Saç Ekimi Merkezleri</a></li>
                         <li class="lifestyle"><a href="/ankara-sac-ekimi-merkezleri.html">Ankara Saç Ekimi Merkezleri</a></li>
