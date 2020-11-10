@@ -31,6 +31,15 @@ if($page=='index'){
     $siteBaslik     = $pageInfo->baslik." - ".$site->baslik_ic;
     $siteAciklama   = $pageInfo->aciklama;
     $siteKelime     = $site->kelime;
+}elseif($page=='clinic-detail'){
+    if($_GET['url']=='index.html'){header('location:'.$site->url.'/index.html');exit();}
+    $pageInfo = $db->table('merkez')->where('url', $_GET['url'])->get();
+    if(empty($pageInfo->id)){header('location:'.$site->url.'/error.html');}
+    $db->table('sayfa')->where('id', $pageInfo->id)->update(['okunma'=>$pageInfo->okunma+1]);
+    $siteBaslik     = $pageInfo->baslik." - ".$site->baslik_ic;
+    $siteBaslikic   = $pageInfo->baslik;
+    $siteAciklama   = $pageInfo->aciklama;
+    $siteKelime     = $site->kelime;
 }elseif ($page=='city'){
     $pageInfo = $db->table('sehir')->where('url', $_GET['url'])->get();
     $siteBaslik     = $pageInfo->sehir." saç ekimi merkezleri - ".$site->baslik_ic;
