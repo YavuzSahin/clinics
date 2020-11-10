@@ -14,7 +14,10 @@
                 <div class="widget">
                     <h2 class="section-title title"><?=$siteBaslikic;?></h2>
                     <h3>Saç Ekimi Merkezi</h3>
-                    <div class="col">
+                    <div class="col logo">
+                        <p><?=$pageInfo->logo;?></p>
+                    </div>
+                    <div class="col details">
                         <p><?=$siteAciklama;?></p>
                     </div>
                 </div>

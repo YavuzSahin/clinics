@@ -84,3 +84,20 @@
     .cat-menu {display: none;}
 }
 .imgback{width: 100%;min-height: 120px;background-color: #f3f4f7;border-radius: 5px;margin-bottom: 10px;}
+
+.widget .logo{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #eee;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 100px;
+}
+.widget .details{
+    margin-top: 10px;
+    padding: 0 0 0px;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+}
