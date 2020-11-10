@@ -66,7 +66,7 @@
                                         <a href="<?=$site->url;?>/sac-ekimi-merkezi/<?=$clinic->url;?>.html"><?=$clinic->baslik;?></a>
                                         <?php if($clinic->sponsorlu==1){?><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><?php } ?>
                                     </h3>
-                                    <p><?=substr(strip_tags($clinic->hakkinda), 0, 255);?></p>
+                                    <p><?=substr(strip_tags($clinic->aciklama), 0, 255);?></p>
                                     <p><i class="fas fa-map-marker-alt"></i> <?=sehir($clinic->city);?> | <?=ilce($clinic->district);?></p>
                                     <div class="btn-group">
                                         <div class="btn btn-success"><a href="<?=$site->url;?>/outlink/phone/<?=$pageInfo->id;?>" target="_blank"><i class="fas fa-phone-volume"></i> Telefon</a></div>
@@ -87,7 +87,7 @@
                                         <a href="<?=$site->url;?>/sac-ekimi-merkezi/<?=$clinic->url;?>.html"><?=$clinic->baslik;?></a>
                                         <?php if($clinic->sponsorlu==1){?><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><?php } ?>
                                     </h3>
-                                    <p><?=substr(strip_tags($clinic->hakkinda), 0, 255);?></p>
+                                    <p><?=substr(strip_tags($clinic->aciklama), 0, 255);?></p>
                                     <p><i class="fas fa-map-marker-alt"></i> <?=sehir($clinic->city);?> | <?=ilce($clinic->district);?></p>
                                     <div class="btn-group">
                                         <div class="btn btn-success"><a href="<?=$site->url;?>/outlink/phone/<?=$pageInfo->id;?>" target="_blank"><i class="fas fa-phone-volume"></i> Telefon</a></div>
