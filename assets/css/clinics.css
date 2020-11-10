@@ -95,6 +95,7 @@
     border-radius: 5px;
     width: 100%;
     min-height: 100px;
+    height: auto;
 }
 .widget .details{
     margin-top: 10px;
