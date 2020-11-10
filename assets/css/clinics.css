@@ -104,4 +104,4 @@
 .widget .btn-group{display: block;}
 .widget .btn-group .btn{display: block;width: 100%;height: auto;border-radius: 5px;margin-bottom: 5px;}
 .details-page{}
-.details-page .clinic-detail{margin: 5px 0;border-radius: 5px;background-color: #fff;}
+.details-page .clinic-detail{margin: 0 0 10px;border-radius: 5px;background-color: #fff;padding: 10px;width: 100%;height: auto;float: left}
