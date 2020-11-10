@@ -101,3 +101,5 @@
     font-size: 13px;
     border-bottom: 1px solid #eee;
 }
+.widget .btn-group{display: block;}
+.widget .btn-group .btn{display: block;width: 100%;height: auto}
