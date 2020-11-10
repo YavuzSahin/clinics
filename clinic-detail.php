@@ -35,6 +35,10 @@
                     <div class="left-content details-page">
                         <h3><span><?=$siteBaslikic;?></span> Hakkında</h3>
                         <div class="clinic-detail"><?=$pageInfo->hakkinda;?></div>
+                        <h3><span><?=$siteBaslikic;?></span> Yorumları</h3>
+                        <div class="clinic-detail"><?=$pageInfo->hakkinda;?></div>
+                        <h3><span><?=$siteBaslikic;?></span> Şikayetleri</h3>
+                        <div class="clinic-detail"><?=$pageInfo->hakkinda;?></div>
                     </div>
                 </div>
             </div>
