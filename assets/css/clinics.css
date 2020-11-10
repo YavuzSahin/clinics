@@ -102,4 +102,6 @@
     border-bottom: 1px solid #eee;
 }
 .widget .btn-group{display: block;}
-.widget .btn-group .btn{display: block;width: 100%;height: auto}
+.widget .btn-group .btn{display: block;width: 100%;height: auto;border-radius: 5px;margin-bottom: 5px;}
+.details-page{}
+.details-page .details-page{margin: 5px 0;border-radius: 5px;background-color: #fff;}
