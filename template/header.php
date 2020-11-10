@@ -35,7 +35,7 @@ if($page=='index'){
     if($_GET['url']=='index.html'){header('location:'.$site->url.'/index.html');exit();}
     $pageInfo = $db->table('merkez')->where('url', $_GET['url'])->get();
     if(empty($pageInfo->id)){header('location:'.$site->url.'/error.html');}
-    $db->table('sayfa')->where('id', $pageInfo->id)->update(['okunma'=>$pageInfo->okunma+1]);
+    $db->table('merkez')->where('id', $pageInfo->id)->update(['okunma'=>$pageInfo->okunma+1]);
     $siteBaslik     = $pageInfo->baslik." - ".$site->baslik_ic;
     $siteBaslikic   = $pageInfo->baslik;
     $siteAciklama   = $pageInfo->aciklama;
@@ -97,6 +97,7 @@ ob_start('compress_page');
     <link rel="icon" href="<?=$site->cdnurl;?>/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="<?=$site->cdnurl;?>/css/main.css">
     <link rel="stylesheet" href="<?=$site->cdnurl;?>/css/clinics.css">
