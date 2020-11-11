@@ -12,9 +12,6 @@
     </div>
     <div class="col-md-4 col-lg-3 float-left tr-sticky">
         <div id="sitebar" class="theiaStickySidebar">
-            <?php
-                if($pageInfo->plaka==99){
-            ?>
             <div class="widget">
                 <h2 class="section-title title">İllere Göre</h2>
                 <h3>Saç Ekimi Merkezleri</h3>
@@ -37,32 +34,28 @@
                         </li>
                     <?php } ?>
                 </ul>
+                <h2 class="section-title title">Saç Ekimi</h2>
+                <h3>Bilgilendirme</h3>
+                <ul class="post-list">
+                    <?php
+                    $categories = $db->table('kategori')->orderBy('id', 'ASC')->getAll();
+                    foreach ($categories as $category){
+                        ?>
+                        <li>
+                            <div class="post small-post">
+                                <div class="post-content-two">
+                                    <h3 class="entry-title">
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="<?=$site->url;?>/<?=kategoriUrl($category->id)?>">
+                                            <?=$category->baslik;?>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div><!--/post-->
+                        </li>
+                    <?php } ?>
+                </ul>
             </div>
-            <?php }else{?>
-                    <div class="widget">
-                        <h2 class="section-title title">İlçelere Göre</h2>
-                        <h3>Saç Ekimi Merkezleri</h3>
-                        <ul class="post-list">
-                            <?php
-                            $cities = $db->table('ilce')->where('sehirID', $pageInfo->id)->orderBy('id', 'ASC')->getAll();
-                            foreach ($cities as $city){
-                                ?>
-                                <li>
-                                    <div class="post small-post">
-                                        <div class="post-content-two">
-                                            <h3 class="entry-title">
-                                                <i class="fa fa-angle-right"></i>
-                                                <a href="<?=$site->url;?>/ilce/<?=seoUrl($city->ilce.'-sac-ekimi-merkezleri')?>.html">
-                                                    <?=$city->ilce;?> saç ekimi
-                                                </a>
-                                            </h3>
-                                        </div>
-                                    </div><!--/post-->
-                                </li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-            <?php }?>
         </div>
     </div>
     <div class="col-md-8 col-lg-9 float-right listdiv">
