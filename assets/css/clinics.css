@@ -116,5 +116,5 @@ p.location i{color: #ee162d;}
 .clinic-detail-slider{width: 100%;position: relative;float: left;overflow: hidden;}
 .clinic-detail-slider .slick-content{width: 100%;position: relative;float: left;}
 .clinic-detail-slider .slick-content .item{width: 100%;position: relative;float: left;}
-.clinic-detail-slider .slick-content .item .comments{color: #fff;margin: 0 0 5px 0;padding: 50px 10px 10px 10px;background-color: #1d2124;border-radius: 5px;min-height: 50px;}
+.clinic-detail-slider .slick-content .item .comments{color: #fff;margin: 0 5px 0 0;padding: 50px 10px 10px 10px;background-color: #1d2124;border-radius: 5px;min-height: 50px;}
 .clinic-detail-slider .slick-content .item:before{font-family: 'Font Awesome 5 Free';content: '\f086';color: rgba(255,255,255,0.4);font-size: 32px;position: absolute;left: 5px;top:5px;}
