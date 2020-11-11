@@ -135,10 +135,22 @@ $site = $db->table('site')->where('id', 1)->get();
                     <section class="card">
                         <header class="card-header">Ping İşlemi</header>
                         <div class="card-body">
-                            <?php ?>
+                            <?php
+                                if(isset($_GET['sehirID'])){
+                                    $sehir = $_GET['sehirID'];
+                                    if($sehir=34){
+                                        $url = 'istanbul';
+                                    }
+
+                                    $html = file_get_html('https://www.sacekimiburada.com/'.$url.'-sac-ekim-merkezleri');
+                                    foreach($html->find('a') as $element)
+                                        echo $element->href . '<br>';
+                                }
+                            ?>
                             <div class="form-group">
                                 <label for="kelime">İl Seçiniz</label>
                                 <select class="js-example-basic-single" id="sehir" name="sehir">
+                                        <option value="0">Şehir Seçiniz</option>
                                         <option value="34" data-select2-id="40">İstanbul</option>
                                         <option value="6" data-select2-id="41">Ankara</option>
                                         <option value="35" data-select2-id="42">İzmir</option>
