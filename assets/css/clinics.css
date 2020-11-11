@@ -34,6 +34,7 @@
     color: #fdbd10;
     font-size: 32px;
     z-index: 10;
+    display: none;
 }
 .clinics .list-clinics .list-clinic.sponsorlu::after {
     position: absolute;
@@ -47,6 +48,7 @@
     font-weight: bold;
     background: #fff;
     padding: 10px 0px 0 30px;
+    display: none;
 }
 .clinics .list-clinics .list-clinic .img{border-right: 1px solid #eee;}
 .clinics .list-clinics .list-clinic .info{}
@@ -84,7 +86,7 @@
     }
     .cat-menu {display: none;}
 }
-.imgback{width: 100%;min-height: 120px;background-color: #f3f4f7;border-radius: 5px;margin-bottom: 10px;}
+.imgback{width: 100%;min-height: 120px;background-color: #f3f4f7;border-radius: 5px;margin-bottom: 10px;padding: 5px;}
 
 .widget .logo{
     padding: 10px;
