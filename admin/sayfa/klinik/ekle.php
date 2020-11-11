@@ -2,7 +2,7 @@
     <div class="col-lg-12">
         <section class="card">
             <header class="card-header">
-                Yeni İçerik Ekle
+                Yeni Klinik Ekle
             </header>
             <div class="card-body">
                 <?php
@@ -10,10 +10,10 @@
                         include_once 'islem/'.$_GET['s'].'/'.$_GET['is'].'.php';
                     }
                 ?>
-                <form action="?s=icerik&p=ekle&is=ekle" method="post" enctype="multipart/form-data">
+                <form action="?s=merkez&p=ekle&is=ekle" method="post" enctype="multipart/form-data">
                   <div class="content-div">
                     <div class="form-group">
-                        <label for="baslik">İçerik Başlığı</label>
+                        <label for="baslik">Merkez Başlığı</label>
                         <input type="text" class="form-control" id="baslik" name="baslik" aria-describedby="baslikYardim" placeholder="İçerik Başlığı">
                     </div>
                     <div class="form-group">
@@ -34,6 +34,17 @@
                           <label for="adres">Kategori Linki</label>
                           <input type="text" class="form-control" id="adres" name="url" aria-describedby="adresYardim" placeholder="İçerik Linki">
                     </div>
+                      <div class="form-group">
+                          <label for="kelime">İl</label>
+                          <select class="js-example-basic-single" name="city">
+                              <?php
+                              $sehirler = $db->table('city')->getAll();
+                              foreach ($sehirler as $sehir){
+                                  ?>
+                                  <option value="<?=$sehir->plaka;?>"><?=$sehir->baslik;?></option>
+                              <?php } ?>
+                          </select>
+                      </div>
                     <div class="form-group">
                           <label for="kelime">Kategoriler</label>
                           <select class="js-example-basic-single" name="kategori">
