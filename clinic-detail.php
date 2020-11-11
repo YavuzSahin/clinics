@@ -38,11 +38,9 @@
                         <h3><span><?=$siteBaslikic;?></span> Yorumları</h3>
                         <div class="clinic-detail-slider">
                             <div class="slick-content">
-                                <div class="item">your content</div>
-                                <div class="item">your content</div>
-                                <div class="item">your content</div>
-                                <div class="item">your content</div>
-                                <div class="item">your content</div>
+                                <div class="item">
+                                    <div class="comments">test içeriği</div>
+                                </div>
                             </div>
                         </div>
                         <h3><span><?=$siteBaslikic;?></span> Şikayetleri</h3>
