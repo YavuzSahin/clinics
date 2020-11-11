@@ -25,12 +25,44 @@
         if ($(window).width() >= 960) {
             $(".theiaStickySidebar").sticky({topSpacing:0});
         }
-        $('.slick-content').slick({
+        $('.yorum').slick({
             dots: true,
             infinite: true,
             speed: 300,
             autoplay:true,
             autoplaySpeed:5000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        $('.skiayet').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            autoplay:true,
+            autoplaySpeed:7000,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [

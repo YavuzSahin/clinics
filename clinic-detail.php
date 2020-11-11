@@ -37,7 +37,7 @@
                         <div class="clinic-detail"><?=$pageInfo->hakkinda;?></div>
                         <h3><span><?=$siteBaslikic;?></span> Yorumları</h3>
                         <div class="clinic-detail-slider">
-                            <div class="slick-content">
+                            <div class="slick-content yorum">
                                 <div class="item">
                                     <div class="comments">test içeriği</div>
                                 </div>
@@ -56,7 +56,25 @@
                             </div>
                         </div>
                         <h3><span><?=$siteBaslikic;?></span> Şikayetleri</h3>
-                        <div class="clinic-detail"><?=$pageInfo->hakkinda;?></div>
+                        <div class="clinic-detail-slider">
+                            <div class="slick-content sikayet">
+                                <div class="item">
+                                    <div class="complain">test içeriği</div>
+                                </div>
+                                <div class="item">
+                                    <div class="complain">test içeriği 2</div>
+                                </div>
+                                <div class="item">
+                                    <div class="complain">test içeriği 3</div>
+                                </div>
+                                <div class="item">
+                                    <div class="complain">test içeriği 4</div>
+                                </div>
+                                <div class="item">
+                                    <div class="complain">test içeriği 5</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

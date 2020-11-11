@@ -86,6 +86,7 @@
     }
     .cat-menu {display: none;}
     .clinic-detail-slider .slick-content .item .comments{margin: 0!important;}
+    .clinic-detail-slider .slick-content .item .complain{margin: 0!important;}
 }
 .imgback{width: 100%;min-height: 120px;background-color: #f3f4f7;border-radius: 5px;margin-bottom: 10px;padding: 5px;}
 
@@ -118,4 +119,6 @@ p.location i{color: #ee162d;}
 .clinic-detail-slider .slick-content{width: 100%;position: relative;float: left;}
 .clinic-detail-slider .slick-content .item{width: 100%;position: relative;float: left;}
 .clinic-detail-slider .slick-content .item .comments{color: #fff;margin: 0 5px 0 0;padding: 50px 10px 10px 10px;background-color: #1d2124;border-radius: 5px;min-height: 50px;}
-.clinic-detail-slider .slick-content .item:before{font-family: 'Font Awesome 5 Free';content: '\f086';color: rgba(255,255,255,0.4);font-size: 32px;position: absolute;left: 5px;top:5px;}
+.clinic-detail-slider .slick-content .item .complain{color: #fff;margin: 0 5px 0 0;padding: 50px 10px 10px 10px;background-color: #1d2124;border-radius: 5px;min-height: 50px;}
+.clinic-detail-slider .slick-content .yorum.item:before{font-family: 'Font Awesome 5 Free';content: '\f086';color: rgba(255,255,255,0.4);font-size: 32px;position: absolute;left: 5px;top:5px;}
+.clinic-detail-slider .slick-content .sikayet.item:before{font-family: 'Font Awesome 5 Free';content: '\f556';color: rgba(255,255,255,0.4);font-size: 32px;position: absolute;left: 5px;top:5px;}
