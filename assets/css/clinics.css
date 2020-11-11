@@ -85,6 +85,7 @@
         border-radius: 5px;
     }
     .cat-menu {display: none;}
+    .clinic-detail-slider .slick-content .item .comments{margin: 0;}
 }
 .imgback{width: 100%;min-height: 120px;background-color: #f3f4f7;border-radius: 5px;margin-bottom: 10px;padding: 5px;}
 
