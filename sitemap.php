@@ -19,7 +19,7 @@ $site = $db->table('site')->where('id', 1)->get();
         ?>
         <url>
             <loc><?=$site->url;?>/kategori/<?=$category->url;?>.html</loc>
-            <lastmod><?=$category->guncellenme_tarihi;?></lastmod>
+            <lastmod><?=date("'Y-m-dTH:i:sP'", strtotime($category->guncellenme_tarihi));?></lastmod>
             <changefreq>daily</changefreq>
             <priority>1.00</priority>
         </url>
@@ -30,7 +30,7 @@ $site = $db->table('site')->where('id', 1)->get();
         ?>
         <url>
             <loc><?=$site->url;?>/sac-ekimi-merkezi/<?=$clinic->url;?>.html</loc>
-            <lastmod><?=$clinic->guncellenme_tarihi;?></lastmod>
+            <lastmod><?=date("'Y-m-dTH:i:sP'", strtotime($clinic->guncellenme_tarihi));?></lastmod>
             <changefreq>daily</changefreq>
             <priority>1.00</priority>
         </url>
@@ -41,7 +41,7 @@ $site = $db->table('site')->where('id', 1)->get();
         ?>
         <url>
             <loc><?=$site->url;?>/<?=$city->url;?>-sac-ekimi-merkezleri.html</loc>
-            <lastmod><?=$city->guncellenme_tarihi;?></lastmod>
+            <lastmod><?=date("'Y-m-dTH:i:sP'", strtotime($city->guncellenme_tarihi));?></lastmod>
             <changefreq>daily</changefreq>
             <priority>1.00</priority>
         </url>
@@ -52,7 +52,7 @@ $site = $db->table('site')->where('id', 1)->get();
         ?>
         <url>
             <loc><?=$site->url;?>/ilce/<?=$city->url;?>-sac-ekimi-merkezleri.html</loc>
-            <lastmod><?=$city->guncellenme_tarihi;?></lastmod>
+            <lastmod><?=date("'Y-m-dTH:i:sP'", strtotime($city->guncellenme_tarihi));?></lastmod>
             <changefreq>daily</changefreq>
             <priority>1.00</priority>
         </url>
@@ -63,7 +63,7 @@ $site = $db->table('site')->where('id', 1)->get();
         ?>
         <url>
             <loc><?=$site->url;?>/<?=$page->url;?>.html</loc>
-            <lastmod><?=$page->guncellenme_tarihi;?></lastmod>
+            <lastmod><?=date("'Y-m-dTH:i:sP'", strtotime($page->guncellenme_tarihi));?></lastmod>
             <changefreq>daily</changefreq>
             <priority>1.00</priority>
         </url>
