@@ -151,7 +151,7 @@ $site = $db->table('site')->where('id', 1)->get();
                                         $url    = 'antalya';
                                         $sehir  = 7;
                                     }
-
+                                    echo '<b>https://www.sacekimiburada.com/'.$url.'-sac-ekim-merkezleri</b> için çalışıyorum.<br>';
                                     $html = file_get_html('https://www.sacekimiburada.com/'.$url.'-sac-ekim-merkezleri');
                                     foreach($html->find('#sideItemRf .pr-item') as $element){
                                         $name   = $element->find('h3', 0)->plaintext;
@@ -170,7 +170,8 @@ $site = $db->table('site')->where('id', 1)->get();
                                                 'guncellenme_tarihi'    => date('Y-m-d H:i:s'),
                                         ];
 
-                                        $a = $db->table('merkez')->insert($data);
+                                       // $a = $db->table('merkez')->insert($data);
+                                        $a =1;
                                         if($a) {
                                             echo $name . " başarıyla eklendi";
                                         }else{
