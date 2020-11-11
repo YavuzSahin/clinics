@@ -133,13 +133,23 @@ $site = $db->table('site')->where('id', 1)->get();
             <div class="row">
                 <div class="col-lg-12">
                     <section class="card">
-                        <header class="card-header">Ping İşlemi</header>
+                        <header class="card-header">Otomatik Klinik Ekleme İşlemi</header>
                         <div class="card-body">
                             <?php
                                 if(isset($_GET['sehirID'])){
                                     $sehir = $_GET['sehirID'];
                                     if($sehir=34){
-                                        $url = 'istanbul';
+                                        $url    = 'istanbul';
+                                        $sehir  = 34;
+                                    }elseif($sehir=35){
+                                        $url    = 'izmir';
+                                        $sehir  = 35;
+                                    }elseif($sehir=6){
+                                        $url    = 'ankara';
+                                        $sehir  = 6;
+                                    }elseif($sehir=7){
+                                        $url    = 'antalya';
+                                        $sehir  = 7;
                                     }
 
                                     $html = file_get_html('https://www.sacekimiburada.com/'.$url.'-sac-ekim-merkezleri');
@@ -154,7 +164,7 @@ $site = $db->table('site')->where('id', 1)->get();
                                                 'baslik'                => $name,
                                                 'url'                   => $url,
                                                 'aciklama'              => $name.', hakkındaki '.$site->baslik_ic.' profilidir. '.$name.' hakkındaki '.$name.' fiyatları, '.$name.' yorumları ve '.$name.' şikayetlerine ulaşabilirsiniz.',
-                                                'city'                  => 34,
+                                                'city'                  => $sehir,
                                                 'logo'                  => $url.'.jpg',
                                                 'eklenme_tarihi'        => date('Y-m-d H:i:s'),
                                                 'guncellenme_tarihi'    => date('Y-m-d H:i:s'),
@@ -178,19 +188,6 @@ $site = $db->table('site')->where('id', 1)->get();
                                         <option value="6" data-select2-id="41">Ankara</option>
                                         <option value="35" data-select2-id="42">İzmir</option>
                                         <option value="7" data-select2-id="43">Antalya</option>
-                                        <option value="1" data-select2-id="44">Adana</option>
-                                        <option value="16" data-select2-id="45">Bursa</option>
-                                        <option value="20" data-select2-id="46">Denizli</option>
-                                        <option value="21" data-select2-id="47">Diyarbakır</option>
-                                        <option value="23" data-select2-id="48">Elazığ</option>
-                                        <option value="27" data-select2-id="49">Gaziantep</option>
-                                        <option value="31" data-select2-id="50">Hatay</option>
-                                        <option value="38" data-select2-id="51">Kayseri</option>
-                                        <option value="41" data-select2-id="52">Kocaeli</option>
-                                        <option value="42" data-select2-id="53">Konya</option>
-                                        <option value="44" data-select2-id="54">Malatya</option>
-                                        <option value="55" data-select2-id="55">Samsun</option>
-                                        <option value="58" data-select2-id="56">Sivas</option>
                                 </select>
                             </div>
                         </div>
