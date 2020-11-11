@@ -13,7 +13,7 @@
         <div id="sitebar" class="theiaStickySidebar">
                 <div class="widget">
                     <h2 class="section-title title"><?=$site->baslik_ic;?></h2>
-                    <h3>Saç Ekimi Bilgilendirme</h3>
+                    <h3>Saç Ekimi Merkezleri</h3>
                     <ul class="post-list">
                         <?php
                         $cities = $db->table('sehir')->orderBy('id', 'ASC')->getAll();
@@ -33,7 +33,7 @@
                             </li>
                         <?php } ?>
                     </ul>
-                    <h3>Saç Ekimi Kategorileri</h3>
+                    <h2 class="section-title title">Saç Ekimi Kategorileri</h2>
                     <ul class="post-list">
                         <?php
                         $categories = $db->table('kategori')->orderBy('id', 'ASC')->getAll();

@@ -33,6 +33,26 @@
                         </li>
                     <?php } ?>
                 </ul>
+                <h2 class="section-title title">Saç Ekimi Kategorileri</h2>
+                <ul class="post-list">
+                    <?php
+                    $categories = $db->table('kategori')->orderBy('id', 'ASC')->getAll();
+                    foreach ($categories as $category){
+                        ?>
+                        <li>
+                            <div class="post small-post">
+                                <div class="post-content-two">
+                                    <h3 class="entry-title">
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="<?=$site->url;?>/<?=kategoriUrl($category->id)?>.html">
+                                            <?=$category->baslik;?>
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div><!--/post-->
+                        </li>
+                    <?php } ?>
+                </ul>
             </div>
         </div>
     </div>
