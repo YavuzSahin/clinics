@@ -12,27 +12,6 @@
     <div class="col-md-4 col-lg-3 float-left tr-sticky">
         <div id="sitebar" class="theiaStickySidebar">
             <div class="widget">
-                <h2 class="section-title title">İllere Göre</h2>
-                <h3>Saç Ekimi Merkezleri</h3>
-                <ul class="post-list">
-                    <?php
-                    $cities = $db->table('sehir')->orderBy('id', 'ASC')->getAll();
-                    foreach ($cities as $city){
-                        ?>
-                        <li>
-                            <div class="post small-post">
-                                <div class="post-content-two">
-                                    <h3 class="entry-title">
-                                        <i class="fa fa-angle-right"></i>
-                                        <a href="<?=$site->url;?>/<?=seoUrl($city->sehir.'-sac-ekimi-merkezleri')?>.html">
-                                            <?=$city->sehir;?> saç ekimi
-                                        </a>
-                                    </h3>
-                                </div>
-                            </div><!--/post-->
-                        </li>
-                    <?php } ?>
-                </ul>
                 <h2 class="section-title title">Saç Ekimi</h2>
                 <h3>Bilgilendirme</h3>
                 <ul class="post-list">
@@ -54,6 +33,27 @@
                         </li>
                     <?php } ?>
                 </ul>
+                <h2 class="section-title title">İllere Göre</h2>
+                <h3>Saç Ekimi Merkezleri</h3>
+                <ul class="post-list">
+                    <?php
+                    $cities = $db->table('sehir')->orderBy('id', 'ASC')->getAll();
+                    foreach ($cities as $city){
+                        ?>
+                        <li>
+                            <div class="post small-post">
+                                <div class="post-content-two">
+                                    <h3 class="entry-title">
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="<?=$site->url;?>/<?=seoUrl($city->sehir.'-sac-ekimi-merkezleri')?>.html">
+                                            <?=$city->sehir;?> saç ekimi
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div><!--/post-->
+                        </li>
+                    <?php } ?>
+                </ul>
             </div>
         </div>
     </div>
@@ -63,30 +63,17 @@
                 <div class="col">
                     <div class="left-content">
                         <?php
-                        $clinics = $db->table('merkez')->orderBy('sponsorlu', 'DESC')->getAll();
+                        $pages = $db->table('sayfa')->where('kategori', $pageInfo->id)->getAll();
                         ?>
-                        <h3>Ön Plana Çıkan <u><b><?=count($clinics)?></b></u> <span><?=$siteBaslikic;?></span></h3>
                     </div>
                     <ul class="list-clinics">
                         <?php
-                        foreach ($clinics as $clinic){
+                        foreach ($pages as $page){
                             ?>
-                            <li class="list-clinic <?php if($clinic->sponsorlu==1){?>sponsorlu<?php } ?>">
-                                <div class="col-md-2 col-sm-6 img float-left imgback">
-                                    <img itemprop="image" class="img-fluid" src="<?=$site->url;?>/upload/logo/<?=$clinic->logo;?>" width="871" height="497" alt="<?=$clinic->baslik;?>" />
-                                </div>
-                                <div class="col-md-10 col-sm-6 info float-right">
-                                    <h3>
-                                        <a href="<?=$site->url;?>/sac-ekimi-merkezi/<?=$clinic->url;?>.html"><?=$clinic->baslik;?></a>
-                                        <?php if($clinic->sponsorlu==1){?><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><?php } ?>
-                                    </h3>
-                                    <p><?=substr(strip_tags($clinic->aciklama), 0, 255);?></p>
-                                    <p class="location"><i class="fas fa-map-marker-alt"></i> <?=sehir($clinic->city);?> | <?=ilce($clinic->district);?></p>
-                                    <div class="btn-group">
-                                        <div class="btn btn-success"><a href="<?=$site->url;?>/outlink/phone/<?=$clinic->id;?>" target="_blank"><i class="fas fa-phone-volume"></i> Telefon</a></div>
-                                        <div class="btn btn-warning"><a href="<?=$site->url;?>/outlink/whatsapp/<?=$clinic->id;?>" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp ile Ulaş</a></div>
-                                        <div class="btn btn-info"><a href="<?=$site->url;?>/outlink/whatsapp/<?=$clinic->id;?>" target="_blank"><i class="fas fa-money-bill-wave"></i> Fiyat Talep Et</a></div>
-                                    </div>
+                            <li class="list-clinic">
+                                <div class="col-md-12 col-sm-12 info float-left">
+                                    <h3><a href="<?=$site->url;?>/<?=$page->url;?>.html"><?=$page->baslik;?></a></h3>
+                                    <p><?=substr(strip_tags($page->aciklama), 0, 255);?></p>
                                 </div>
                             </li>
                         <?php } ?>
