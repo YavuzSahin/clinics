@@ -34,7 +34,17 @@
                 <div class="col">
                     <div class="left-content details-page">
                         <h3><span><?=$siteBaslikic;?></span> Hakkında</h3>
-                        <div class="clinic-detail"><?=$pageInfo->hakkinda;?></div>
+                        <div class="clinic-detail">
+                            <?=$pageInfo->hakkinda;?><br>
+                            <p>Kocaeli Gebze saç ekim merkezleri arasında faaliyet gösteren <?=$siteBaslikic;?>, FUE Saç Ekimi ve DHI Saç Ekimi gibi saç ekimi çözümlerini saç ekimi hastalarına özel alternatif sunarak saç ekimi operasyonlarını gerçekleştirmektedir.<br>
+                                Saç ekimi alanında, mükemmel saç ekimi sonucu başarılara imza atan <?=$siteBaslikic;?>, uzman kadrosu ile ihtiyaçları analiz ederek, en hızlı, uygun ve kaliteli hizmet politikası ile saç ekimi hastalarına hizmet vermektedir.<br>
+                                Uzun yıllara dayanan tecrübesiyle, saç ekimi teknolojilerini ve gelişmelerini yakından takip ederek, hastalarına en uygun saç ekimi yöntemlerini sunmayı hedeflemektedir.<br>
+                                Yurtiçinden ve yurtdışından geniş bir kitleye hitap eden <?=$siteBaslikic;?> günden güne saç ekimi başarısını arttırmaktadır.<br>
+                                Türkiye’de tüm şehirlerimizden, yurtdışından ise genellikle Avrupadan; İngiltere, Almanya, Hollanda, Belçika, Fransa, İrlanda, İsveç ve İsviçreden yoğunlukta gelmekteyken, Arap ülkelerinden; Suudi Arabistan, Dubai (Birleşik Arap Emirlikleri), Katar, Kuveyt, Libya, Mısır ve Irak gibi başlıca ülkelerden sıkça gelmektedir.<br>
+                                Saç ekimi yaptıran hastaların memnuniyet oranı bir hayli yüksek olan <?=$siteBaslikic;?> saç ekimi işlemi sonrasında da hastalarına gereken tüm hizmetleri vermektedir.<br>
+                                <strong>Saç ekimi <?=sehir($pageInfo->city);?></strong> denince akla ilk gelen merkezlerden biri olan <?=$siteBaslikic;?> saç ekimi konusundaki çalışmalarını özenle devam ettirmektedir.<br>
+                                <a href="<?=$site->url;?>" title="saç ekimi merkezleri">Saç ekimi merkezleri</a> hakkında bilgi almak istiyorsanız, <?=$site->baslik_ic;?> sitemizi takip etmeye devam edebilirsiniz..</p>
+                        </div>
                         <h3><span><?=$siteBaslikic;?></span> Yorumları</h3>
                         <div class="clinic-detail-slider">
                             <div class="slick-content yorum">
