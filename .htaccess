@@ -18,6 +18,7 @@ RewriteRule ^ilce/(.*)-sac-ekimi-merkezleri.html$ district.php?url=$1 [L,QSA]
 RewriteRule ^(.*)-sac-ekimi-merkezleri.html$ city.php?url=$1 [L,QSA]
 RewriteRule ^sac-ekimi-merkezi/(.*).html$ clinic-detail.php?url=$1 [L,QSA]
 RewriteRule ^etiket/(.*).html$ tags.php?url=$1 [L,QSA]
+RewriteRule ^kategori/(.*).html$ category.php?url=$1 [L,QSA]
 RewriteRule ^site-haritasi.html$ sitemap.php [L,QSA]
 RewriteRule ^(.*).html$ page.php?p=page&url=$1 [L,QSA]
 

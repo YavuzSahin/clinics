@@ -40,6 +40,11 @@ if($page=='index'){
     $siteBaslikic   = $pageInfo->baslik;
     $siteAciklama   = $pageInfo->aciklama;
     $siteKelime     = $site->kelime;
+}elseif ($page=='category'){
+    $pageInfo = $db->table('kategori')->where('url', $_GET['url'])->get();
+    $siteBaslik     = $pageInfo->baslik." kategorisi - ".$site->baslik_ic;
+    $siteAciklama   = $pageInfo->aciklama;
+    $siteKelime     = $site->kelime;
 }elseif ($page=='city'){
     $pageInfo = $db->table('sehir')->where('url', $_GET['url'])->get();
     $siteBaslik     = $pageInfo->sehir." saç ekimi merkezleri - ".$site->baslik_ic;
