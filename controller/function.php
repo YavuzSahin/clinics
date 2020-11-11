@@ -147,3 +147,23 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config.php';
         return $z;
     }
 
+
+function sehir($ID){
+    $db=connect();
+    if($ID==0 or empty($ID)){
+        echo "İstanbul";
+    }else {
+        $sehir = $db->table('sehir')->where('plaka', $ID)->get();
+        echo $sehir->sehir;
+    }
+}
+function ilce($ID){
+    $db=connect();
+    if($ID==0){
+        echo "Tüm İstanbul";
+    }else {
+        $sehir = $db->table('ilce')->where('id', $ID)->get();
+        echo $sehir->ilce;
+    }
+}
+
