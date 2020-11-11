@@ -44,9 +44,8 @@
                                 ?>
                                 <div class="item">
                                     <div class="comments">
-                                        <i class="fa fa-user"></i><br>
-                                        <p><?=$comment->yorum;?></p>
-                                        <p><?=$comment->isim;?></p>
+                                        <p><i class="fa fa-user"></i> <?=$comment->isim;?></p>
+                                        <p class="comment-inside"><?=$comment->yorum;?></p>
                                     </div>
                                 </div>
                                 <?php } ?>
