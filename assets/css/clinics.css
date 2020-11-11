@@ -121,4 +121,4 @@ p.location i{color: #ee162d;}
 .clinic-detail-slider .slick-content .item .comments{color: #fff;margin: 0 5px 0 0;padding: 50px 10px 10px 10px;background-color: #1d2124;border-radius: 5px;min-height: 50px;}
 .clinic-detail-slider .slick-content .item .complain{color: #fff;margin: 0 5px 0 0;padding: 50px 10px 10px 10px;background-color: #1d2124;border-radius: 5px;min-height: 50px;}
 .clinic-detail-slider .slick-content.yorum .item:before{font-family: 'Font Awesome 5 Free';content: '\f086';color: rgba(255,255,255,0.4);font-size: 59px;position: absolute;left: 0px;top: -17px;}
-.clinic-detail-slider .slick-content.sikayetn .item:before{font-family: 'Font Awesome 5 Free';content: '\f7a9';color: rgba(255,255,255,0.4);font-size: 32px;position: absolute;left: 5px;top:5px;}
+.clinic-detail-slider .slick-content.sikayetn .item:before{font-family: 'Font Awesome 5 Free';content: '\f165';color: rgba(255,255,255,0.4);font-size: 32px;position: absolute;left: 5px;top:5px;}
