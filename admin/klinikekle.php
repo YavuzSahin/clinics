@@ -145,6 +145,8 @@ $site = $db->table('site')->where('id', 1)->get();
                                     $html = file_get_html('https://www.sacekimiburada.com/'.$url.'-sac-ekim-merkezleri');
                                     foreach($html->find('#sideItemRf .pr-item') as $element){
                                         echo $element->find('h3', 0)->plaintext.'<br>';
+                                        echo $element->find('img', 0)->src.'<br>';
+                                        echo $element->find('.pr-item-foot a', 0)->href.'<br>';
                                         echo "<br><hr>";
                                     }
                                 }
