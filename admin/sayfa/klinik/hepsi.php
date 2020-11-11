@@ -5,7 +5,7 @@
                 Klinikler
             </header>
             <div class="card-body">
-                <a href="klinik.php?s=icerik&p=ekle" class="btn btn-success btn-sm pull-right"><i class="fa fa-plus"></i> Yeni Klinik Ekle</a>
+                <a href="klinik.php?s=merkez&p=ekle" class="btn btn-success btn-sm pull-right"><i class="fa fa-plus"></i> Yeni Klinik Ekle</a>
                 <div class="adv-table">
                     <table  class="display table table-bordered table-striped" id="dynamic-table">
                         <thead>

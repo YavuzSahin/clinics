@@ -13,15 +13,31 @@
                 <form action="?s=merkez&p=ekle&is=ekle" method="post" enctype="multipart/form-data">
                   <div class="content-div">
                     <div class="form-group">
-                        <label for="baslik">Merkez Başlığı</label>
-                        <input type="text" class="form-control" id="baslik" name="baslik" aria-describedby="baslikYardim" placeholder="İçerik Başlığı">
+                        <label for="baslik">Klinik Adı</label>
+                        <input type="text" class="form-control" id="baslik" name="baslik" aria-describedby="baslikYardim" placeholder="Klinik Adı">
                     </div>
                     <div class="form-group">
-                        <label for="baslik-ic">İçerik Başlığı iç sayfalar için</label>
-                        <input type="text" class="form-control" id="baslik-ic" name="baslik_ic" aria-describedby="baslikYardim" placeholder="İçerik Başlığı">
+                        <label for="baslik-ic">Telefon Numarası</label>
+                        <input type="text" class="form-control" id="telefon" name="telefon" aria-describedby="baslikYardim" placeholder="Telefon Numarası">
                     </div>
                     <div class="form-group">
-                        <label for="aciklama">İçerik Açıklaması</label>
+                        <label for="baslik-ic">Whatsapp Numarası</label>
+                        <input type="text" class="form-control" id="whatsapp" name="whatsapp" aria-describedby="baslikYardim" placeholder="Whatsapp Numarası">
+                    </div>
+                    <div class="form-group">
+                        <label for="baslik-ic">Web Sitesi</label>
+                        <input type="text" class="form-control" id="website" name="website" aria-describedby="baslikYardim" placeholder="Web Sitesi">
+                    </div>
+                    <div class="form-group">
+                        <label for="baslik-ic">Facebook Adresi</label>
+                        <input type="text" class="form-control" id="facebook" name="facebook" aria-describedby="baslikYardim" placeholder="Facebook Adresi">
+                    </div>
+                    <div class="form-group">
+                        <label for="baslik-ic">İnstagram Adresi</label>
+                        <input type="text" class="form-control" id="instagram" name="instagram" aria-describedby="baslikYardim" placeholder="İnstagram Adresi">
+                    </div>
+                    <div class="form-group">
+                        <label for="aciklama">Klinik Açıklaması</label>
                         <input type="text" class="form-control" id="aciklama" name="aciklama" aria-describedby="aciklamaYardim" placeholder="İçerik Açıklaması">
                     </div>
                     <div class="form-group">
@@ -35,6 +51,13 @@
                           <input type="text" class="form-control" id="adres" name="url" aria-describedby="adresYardim" placeholder="İçerik Linki">
                     </div>
                       <div class="form-group">
+                          <label for="kelime">Sponsorlu</label>
+                          <select class="js-example-basic-single" name="sponsorlu">
+                              <option value="0">Hayır</option>
+                              <option value="1">Evet</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
                           <label for="kelime">İl</label>
                           <select class="js-example-basic-single" name="city">
                               <?php
@@ -45,34 +68,12 @@
                               <?php } ?>
                           </select>
                       </div>
-                    <div class="form-group">
-                          <label for="kelime">Kategoriler</label>
-                          <select class="js-example-basic-single" name="kategori">
-                              <?php
-                              $kategoriler = $db->table('kategori')->getAll();
-                              foreach ($kategoriler as $kategori){
-                                  ?>
-                                  <option value="<?=$kategori->id;?>"><?=$kategori->baslik;?></option>
-                              <?php } ?>
-                          </select>
-                      </div>
-                    <div class="form-group">
-                          <label for="etiket">Etiketler</label>
-                          <select class="js-example-basic-multiple" name="etiket[]" multiple>
-                              <?php
-                              $etiketler = $db->table('etiket')->getAll();
-                              foreach ($etiketler as $etiket){
-                                  ?>
-                                  <option value="<?=$etiket->id;?>"><?=$etiket->baslik;?></option>
-                              <?php } ?>
-                          </select>
-                      </div>
                     <div class="form-group image">
-                        <label class="control-label">İçerik Görseli</label>
+                        <label class="control-label">Klinik Logosu</label>
                         <div class="input-group">
                             <span class="input-group-btn">
                                 <span class="btn btn-primary btn-file">
-                                    İçerik Görseli Seç… <input type="file" name="image" id="imgInp">
+                                    Klinik Logosu Seç… <input type="file" name="image" id="imgInp">
                                 </span>
                             </span>
                             <input type="text" class="form-control" readonly>
@@ -85,7 +86,7 @@
                   </div>
                     <div class="form-group save text-right">
                         <div class="col-sm-12">
-                            <button type="submit" class="btn btn-primary">İçerik Ekle</button>
+                            <button type="submit" class="btn btn-primary">Klinik Ekle</button>
                         </div>
                     </div>
                 </form>
