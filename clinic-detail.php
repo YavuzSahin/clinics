@@ -38,21 +38,18 @@
                         <h3><span><?=$siteBaslikic;?></span> Yorumları</h3>
                         <div class="clinic-detail-slider">
                             <div class="slick-content yorum">
+                                <?php
+                                    $comments = $db->table('yorum')->where('merkezid', $pageInfo->id)->where('onay', 1)->getAll();
+                                    foreach ($comments as $comment){
+                                ?>
                                 <div class="item">
-                                    <div class="comments">test içeriği</div>
+                                    <div class="comments">
+                                        <i class="fa fa-user"></i><br>
+                                        <p><?=$comment->yorum;?></p>
+                                        <p><?=$comment->isim;?></p>
+                                    </div>
                                 </div>
-                                <div class="item">
-                                    <div class="comments">test içeriği 2</div>
-                                </div>
-                                <div class="item">
-                                    <div class="comments">test içeriği 3</div>
-                                </div>
-                                <div class="item">
-                                    <div class="comments">test içeriği 4</div>
-                                </div>
-                                <div class="item">
-                                    <div class="comments">test içeriği 5</div>
-                                </div>
+                                <?php } ?>
                             </div>
                         </div>
                         <h3><span><?=$siteBaslikic;?></span> Şikayetleri</h3>
