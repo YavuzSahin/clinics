@@ -33,11 +33,21 @@
                     <li><a href="sayfa.php?s=icerik">İçerik Sayfaları</a></li>
                 </ul>
             </li>
-
+            <li class="sub-menu">
+                <a href="javascript:;" <?php if($page=="klinik"){?>class="active"<?php }?> >
+                    <i class="fa fa-book"></i>
+                    <span>Klinik Yönetimi</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="klinik.php?s=merkez">Klinikler</a></li>
+                    <li><a href="klinik.php?s=il">İller</a></li>
+                    <li><a href="klinik.php?s=ilce">İlçeler</a></li>
+                </ul>
+            </li>
             <li>
-                <a  href="yorum.php">
-                    <i class="fa fa-comment"></i>
-                    <span>Yorum Yönetimi</span>
+                <a  href="klinikekle.php">
+                    <i class="fa fa-user-plus"></i>
+                    <span>Otomatik Klinik Ekle</span>
                 </a>
             </li>
             <li>
