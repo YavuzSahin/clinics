@@ -33,7 +33,8 @@
                         </li>
                     <?php } ?>
                 </ul>
-                <h2 class="section-title title">Saç Ekimi Kategorileri</h2>
+                <h2 class="section-title title">Saç Ekimi</h2>
+                <h3>Bilgilendirme</h3>
                 <ul class="post-list">
                     <?php
                     $categories = $db->table('kategori')->orderBy('id', 'ASC')->getAll();
