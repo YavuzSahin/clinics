@@ -252,6 +252,7 @@ include_once '../controller/function.php';
         });
 
         $('#sehir').change(function() {
+            $('#ilce').destroy();
             $('#ilce').append(new Option('İlçe Adı', 1));
         });
 
