@@ -147,7 +147,8 @@ $site = $db->table('site')->where('id', 1)->get();
                                         $name   = $element->find('h3', 0)->plaintext;
                                         $url    = seoUrl(strip_tags($element->find('h3', 0)->plaintext));
                                         $logo   = "https://www.sacekimiburada.com".$element->find('img', 0)->src;
-                                        file_put_contents('../upload/logo/'.$url.".jpg", file_get_contents($url));
+
+                                        copy($logo, '../upload/logo/'.$url.".jpg");
 
                                         $data = [
                                                 'baslik'                => $name,
