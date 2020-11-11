@@ -15,7 +15,7 @@
                     <h2 class="section-title title"><?=$siteBaslikic;?></h2>
                     <h3>Saç Ekimi Merkezi</h3>
                     <div class="col logo text-center">
-                        <img itemprop="image" class="img-fluid" src="<?=$site->cdnurl;?>/upload/resized/<?=$clinic->logo;?>" width="871" height="497" alt="<?=$clinic->baslik;?>" />
+                        <img itemprop="image" class="img-fluid" src="<?=$site->cdnurl;?>/upload/logo/<?=$clinic->logo;?>" width="871" height="497" alt="<?=$clinic->baslik;?>" />
                     </div>
                     <div class="col details">
                         <p><?=$siteAciklama;?></p>
