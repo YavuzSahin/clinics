@@ -63,7 +63,7 @@ $site = $db->table('site')->where('id', 1)->get();
         ?>
         <url>
             <loc><?=$site->url;?>/<?=$page->url;?>.html</loc>
-            <lastmod><?=date("'Y-m-dTH:i:sP'", strtotime($page->guncellenme_tarihi));?></lastmod>
+            <lastmod><?=date("Y-m-dTH:i:sP", strtotime($page->guncellenme_tarihi));?></lastmod>
             <changefreq>daily</changefreq>
             <priority>1.00</priority>
         </url>
