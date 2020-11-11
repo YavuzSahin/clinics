@@ -138,16 +138,16 @@ $site = $db->table('site')->where('id', 1)->get();
                             <?php
                                 if(isset($_GET['sehirID'])){
                                     $sehir = $_GET['sehirID'];
-                                    if($sehir=34){
+                                    if($sehir==34){
                                         $url    = 'istanbul';
                                         $sehir  = 34;
-                                    }elseif($sehir=35){
+                                    }elseif($sehir==35){
                                         $url    = 'izmir';
                                         $sehir  = 35;
-                                    }elseif($sehir=6){
+                                    }elseif($sehir==6){
                                         $url    = 'ankara';
                                         $sehir  = 6;
-                                    }elseif($sehir=7){
+                                    }elseif($sehir==7){
                                         $url    = 'antalya';
                                         $sehir  = 7;
                                     }
