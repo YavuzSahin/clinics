@@ -68,7 +68,7 @@
                                         </div>
                                     </div>
                                 <?php } }else{ ?>
-                                    <div class="alert alert-success"><?=$siteBaslikic;?> hakkında hiç şikayet bulunamadı!</div>
+                                    <div class="alert alert-success col-md-12"><?=$siteBaslikic;?> hakkında hiç şikayet bulunamadı!</div>
                                 <?php } ?>
                             </div>
                         </div>
