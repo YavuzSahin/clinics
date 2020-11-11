@@ -41,6 +41,9 @@
                                 <div class="item">
                                     <div class="comments">test içeriği</div>
                                 </div>
+                                <div class="item">
+                                    <div class="comments">test içeriği 2</div>
+                                </div>
                             </div>
                         </div>
                         <h3><span><?=$siteBaslikic;?></span> Şikayetleri</h3>
