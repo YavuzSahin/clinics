@@ -113,6 +113,6 @@ p.location{padding: 4px 0;color: #1d2124;position: relative}
 p.location i{color: #ee162d;}
 
 
-.clinic-detail-slider{width: 100%;position: relative;float: left;}
+.clinic-detail-slider{width: 100%;position: relative;float: left;overflow: hidden;}
 .clinic-detail-slider .slick-content{width: 100%;position: relative;float: left;}
-.clinic-detail-slider .slick-content .item{width: 100%;position: relative;float: left;background-color: #1d2124;border-radius: 5px;min-height: 50px;color: #fff;}
+.clinic-detail-slider .slick-content .item{width: 100%;position: relative;float: left;background-color: #1d2124;border-radius: 5px;min-height: 50px;color: #fff;margin: 0 10px;padding: 10px;}
