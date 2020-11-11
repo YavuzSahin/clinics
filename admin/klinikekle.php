@@ -144,9 +144,27 @@ $site = $db->table('site')->where('id', 1)->get();
 
                                     $html = file_get_html('https://www.sacekimiburada.com/'.$url.'-sac-ekim-merkezleri');
                                     foreach($html->find('#sideItemRf .pr-item') as $element){
-                                        echo $element->find('h3', 0)->plaintext.'<br>';
-                                        echo $element->find('img', 0)->src.'<br>';
-                                        echo $element->find('.pr-item-foot a', 0)->href.'<br>';
+                                        $name   = $element->find('h3', 0)->plaintext;
+                                        $url    = seoUrl(strip_tags($element->find('h3', 0)->plaintext));
+                                        $logo   = "https://www.sacekimiburada.com".$element->find('img', 0)->src;
+                                        file_put_contents('../upload/logo/'.$url.".jpg", file_get_contents($url));
+
+                                        $data = [
+                                                'baslik'                => $name,
+                                                'url'                   => $url,
+                                                'aciklama'              => $name.', hakkındaki '.$site->baslik_ic.' profilidir. '.$name.' hakkındaki '.$name.' fiyatları, '.$name.' yorumları ve '.$name.' şikayetlerine ulaşabilirsiniz.',
+                                                'city'                  => 34,
+                                                'logo'                  => $url.'.jpg',
+                                                'eklenme_tarihi'        => date('Y-m-d H:i:s'),
+                                                'guncellenme_tarihi'    => date('Y-m-d H:i:s'),
+                                        ];
+
+                                        $a = $db->table('merkez')->insert($data);
+                                        if($a) {
+                                            echo $name . " başarıyla eklendi";
+                                        }else{
+                                            echo $name . " eklenemedi.";
+                                        }
                                         echo "<br><hr>";
                                     }
                                 }
