@@ -34,6 +34,8 @@
                                     <?php }else {?>
                                         <a href="klinik.php?s=merkez&p=kaldir&id=<?=$icerik->id;?>" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></a>
                                     <?php } ?>
+                                    <a href="klinik.php?s=merkez&p=yorum&id=<?=$icerik->id;?>" class="btn btn-danger btn-sm"><i class="fa fa-comments"></i></a>
+                                    <a href="klinik.php?s=merkez&p=sikayet&id=<?=$icerik->id;?>" class="btn btn-danger btn-sm"><i class="fa fa-thumbs-down"></i></a>
                                 </td>
                             </tr>
                         <?php } ?>
