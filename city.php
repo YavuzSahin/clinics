@@ -87,10 +87,10 @@
                         foreach ($clinics as $clinic){
                             ?>
                             <li class="list-clinic <?php if($clinic->sponsorlu==1){?>sponsorlu<?php } ?>">
-                                <div class="col-md-4 col-sm-6 img float-left imgback">
+                                <div class="col-md-2 col-sm-6 img float-left imgback">
                                     <img itemprop="image" class="img-fluid" src="<?=$site->url;?>/upload/logo/<?=$clinic->logo;?>" width="871" height="497" alt="<?=$clinic->baslik;?>" />
                                 </div>
-                                <div class="col-md-8 col-sm-6 info float-right">
+                                <div class="col-md-10 col-sm-6 info float-right">
                                     <h3>
                                         <a href="<?=$site->url;?>/sac-ekimi-merkezi/<?=$clinic->url;?>.html"><?=$clinic->baslik;?></a>
                                         <?php if($clinic->sponsorlu==1){?><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><?php } ?>
@@ -108,10 +108,10 @@
                         foreach ($clinicsN as $clinic){
                             ?>
                             <li class="list-clinic <?php if($clinic->sponsorlu==1){?>sponsorlu<?php } ?>">
-                                <div class="col-md-4 col-sm-6 img float-left imgback">
+                                <div class="col-md-2 col-sm-6 img float-left imgback">
                                     <img itemprop="image" class="img-fluid" src="<?=$site->url;?>/upload/logo/<?=$clinic->logo;?>" width="871" height="497" alt="<?=$clinic->baslik;?>" />
                                 </div>
-                                <div class="col-md-8 col-sm-6 info float-right">
+                                <div class="col-md-10 col-sm-6 info float-right">
                                     <h3>
                                         <a href="<?=$site->url;?>/sac-ekimi-merkezi/<?=$clinic->url;?>.html"><?=$clinic->baslik;?></a>
                                         <?php if($clinic->sponsorlu==1){?><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><?php } ?>
