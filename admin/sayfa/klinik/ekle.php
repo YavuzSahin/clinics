@@ -58,14 +58,20 @@
                           </select>
                       </div>
                       <div class="form-group">
-                          <label for="kelime">İl</label>
-                          <select class="js-example-basic-single" name="city">
+                          <label for="sehir">İl</label>
+                          <select class="js-example-basic-single" name="sehir">
                               <?php
-                              $sehirler = $db->table('city')->getAll();
+                              $sehirler = $db->table('sehir')->getAll();
                               foreach ($sehirler as $sehir){
                                   ?>
                                   <option value="<?=$sehir->plaka;?>"><?=$sehir->baslik;?></option>
                               <?php } ?>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="ilce">İlçe</label>
+                          <select class="js-example-basic-single" name="ilce">
+                              <option>Lütfen İl Seçiniz</option>
                           </select>
                       </div>
                     <div class="form-group image">
