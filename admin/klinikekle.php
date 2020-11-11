@@ -170,8 +170,7 @@ $site = $db->table('site')->where('id', 1)->get();
                                                 'guncellenme_tarihi'    => date('Y-m-d H:i:s'),
                                         ];
 
-                                       // $a = $db->table('merkez')->insert($data);
-                                        $a =1;
+                                        $a = $db->table('merkez')->insert($data);
                                         if($a) {
                                             echo $name . " başarıyla eklendi";
                                         }else{
