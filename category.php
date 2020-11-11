@@ -1,11 +1,11 @@
 <?php require 'template/header.php';?>
 <div class="container clinics">
     <div class="page-breadcrumbs">
-        <h1 class="section-title"><?=$siteBaslikic;?></h1>
-        <p><?=$siteAciklama;?></p>
+        <h1 class="section-title"><?=$pageInfo->baslik;?></h1>
+        <p><?=$pageInfo->aciklama;?></p>
         <div class="world-nav cat-menu">
             <ul class="list-inline">
-                <li class="active"><a href="<?=$actual_link;?>"><?=$siteBaslikic;?></a></li>
+                <li class="active"><a href="<?=$actual_link;?>"><?=$pageInfo->baslik;?></a></li>
             </ul>
         </div>
     </div>
