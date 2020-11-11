@@ -35,8 +35,8 @@
                     <div class="left-content details-page">
                         <h3><span><?=$siteBaslikic;?></span> Hakkında</h3>
                         <div class="clinic-detail">
-                            <?=$pageInfo->hakkinda;?><br>
-                            <p>Kocaeli Gebze saç ekim merkezleri arasında faaliyet gösteren <?=$siteBaslikic;?>, FUE Saç Ekimi ve DHI Saç Ekimi gibi saç ekimi çözümlerini saç ekimi hastalarına özel alternatif sunarak saç ekimi operasyonlarını gerçekleştirmektedir.<br>
+                            <?=$pageInfo->hakkinda;?>
+                            <p><strong><?=sehir($pageInfo->city);?></strong> saç ekim merkezleri arasında faaliyet gösteren <?=$siteBaslikic;?>, FUE Saç Ekimi ve DHI Saç Ekimi gibi saç ekimi çözümlerini saç ekimi hastalarına özel alternatif sunarak saç ekimi operasyonlarını gerçekleştirmektedir.<br>
                                 Saç ekimi alanında, mükemmel saç ekimi sonucu başarılara imza atan <?=$siteBaslikic;?>, uzman kadrosu ile ihtiyaçları analiz ederek, en hızlı, uygun ve kaliteli hizmet politikası ile saç ekimi hastalarına hizmet vermektedir.<br>
                                 Uzun yıllara dayanan tecrübesiyle, saç ekimi teknolojilerini ve gelişmelerini yakından takip ederek, hastalarına en uygun saç ekimi yöntemlerini sunmayı hedeflemektedir.<br>
                                 Yurtiçinden ve yurtdışından geniş bir kitleye hitap eden <?=$siteBaslikic;?> günden güne saç ekimi başarısını arttırmaktadır.<br>
