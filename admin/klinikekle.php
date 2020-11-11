@@ -144,7 +144,7 @@ $site = $db->table('site')->where('id', 1)->get();
 
                                     $html = file_get_html('https://www.sacekimiburada.com/'.$url.'-sac-ekim-merkezleri');
                                     foreach($html->find('#sideItemRf .pr-item') as $element){
-                                        print_r($element);echo "<br><hr>";
+                                        print_r($element->plaintext);echo "<br><hr>";
                                     }
                                 }
                             ?>
