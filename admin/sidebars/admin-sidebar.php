@@ -35,7 +35,7 @@
             </li>
             <li class="sub-menu">
                 <a href="javascript:;" <?php if($page=="klinik"){?>class="active"<?php }?> >
-                    <i class="fa fa-book"></i>
+                    <i class="fa fa-user-md"></i>
                     <span>Klinik Yönetimi</span>
                 </a>
                 <ul class="sub">
@@ -46,7 +46,7 @@
             </li>
             <li>
                 <a  href="klinikekle.php">
-                    <i class="fa fa-user-plus"></i>
+                    <i class="fa fa-user-md"></i>
                     <span>Otomatik Klinik Ekle</span>
                 </a>
             </li>
