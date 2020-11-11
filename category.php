@@ -66,11 +66,11 @@
                         $pages = $db->table('sayfa')->where('kategori', $pageInfo->id)->getAll();
                         ?>
                     </div>
-                    <ul class="list-clinics">
+                    <ul class="list-clinics" style="margin: 0 !important;">
                         <?php
                         foreach ($pages as $page){
                             ?>
-                            <li class="list-clinic">
+                            <li class="list-clinic" style="margin: 0;">
                                 <div class="col-md-12 col-sm-12 info float-left">
                                     <h3><a href="<?=$site->url;?>/<?=$page->url;?>.html"><?=$page->baslik;?></a></h3>
                                     <p><?=substr(strip_tags($page->aciklama), 0, 255);?></p>
