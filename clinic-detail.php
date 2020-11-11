@@ -39,14 +39,14 @@
                         <div class="clinic-detail-slider">
                             <div class="slick-content yorum">
                                 <?php
-                                    $comments = $db->table('yorum')->where('merkezid', $pageInfo->id)->where('onay', 1)->getAll();
+                                    $comments = $db->table('yorum')->where('merkezid', $pageInfo->id)->where('onay', 1)->where('type', 1)->getAll();
                                     foreach ($comments as $comment){
                                 ?>
                                 <div class="item">
                                     <div class="comments">
-                                        <p><i class="fa fa-user"></i> <?=$comment->isim;?> demiş ki;</p>
+                                        <p><strong><i class="fa fa-user"></i> <?=$comment->isim;?></strong> demiş ki;</p>
                                         <p class="comment-inside"><?=$comment->yorum;?></p>
-                                        <p><?php echo iconv('latin5','utf-8',strftime(' %d %B %Y, %A ',strtotime($comment->eklenme_tarihi)));?></p>
+                                        <small><i class="fa fa-clock-o"></i> <?php echo iconv('latin5','utf-8',strftime(' %d %B %Y, %A ',strtotime($comment->eklenme_tarihi)));?></small>
                                     </div>
                                 </div>
                                 <?php } ?>
@@ -55,21 +55,21 @@
                         <h3><span><?=$siteBaslikic;?></span> Şikayetleri</h3>
                         <div class="clinic-detail-slider">
                             <div class="slick-content sikayetn">
-                                <div class="item">
-                                    <div class="complain">test içeriği</div>
-                                </div>
-                                <div class="item">
-                                    <div class="complain">test içeriği 2</div>
-                                </div>
-                                <div class="item">
-                                    <div class="complain">test içeriği 3</div>
-                                </div>
-                                <div class="item">
-                                    <div class="complain">test içeriği 4</div>
-                                </div>
-                                <div class="item">
-                                    <div class="complain">test içeriği 5</div>
-                                </div>
+                                <?php
+                                $comments = $db->table('yorum')->where('merkezid', $pageInfo->id)->where('onay', 1)->where('type', 2)->getAll();
+                                if(count((array) $comments)>=1){
+                                foreach ($comments as $comment){
+                                    ?>
+                                    <div class="item">
+                                        <div class="comments">
+                                            <p><strong><i class="fa fa-user"></i> <?=$comment->isim;?></strong> demiş ki;</p>
+                                            <p class="comment-inside"><?=$comment->yorum;?></p>
+                                            <small><i class="fa fa-clock-o"></i> <?php echo iconv('latin5','utf-8',strftime(' %d %B %Y, %A ',strtotime($comment->eklenme_tarihi)));?></small>
+                                        </div>
+                                    </div>
+                                <?php } }else{ ?>
+                                    <div class="alert alert-success"><?=$siteBaslikic;?> hakkında hiç şikayet bulunamadı!</div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
