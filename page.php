@@ -24,7 +24,7 @@
                                     <div class="post-content-two">
                                         <h3 class="entry-title">
                                             <i class="fa fa-angle-right"></i>
-                                            <a href="<?=$site->url;?>/<?=kategoriUrl($category->id)?>.html">
+                                            <a href="<?=$site->url;?>/<?=kategoriUrl($category->id)?>">
                                                 <?=$category->baslik;?>
                                             </a>
                                         </h3>

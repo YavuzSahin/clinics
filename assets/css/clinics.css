@@ -124,3 +124,6 @@ p.location i{color: #ee162d;}
 .clinic-detail-slider .slick-content.sikayetn .item:before{font-family: 'Font Awesome 5 Free';content: '\f165';color: rgba(255,255,255,0.4);font-size: 59px;position: absolute;left: 0px;top: -17px;}
 
 .clinic-detail-slider .comment-inside{position: relative;min-height:120px;max-height: 120px;overflow-y: scroll;overflow-x: hidden;}
+
+.list-clinic a{color: #4e555b;}
+.list-clinic a:hover{color: #1f2021;}
