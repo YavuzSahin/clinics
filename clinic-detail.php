@@ -44,8 +44,9 @@
                                 ?>
                                 <div class="item">
                                     <div class="comments">
-                                        <p><i class="fa fa-user"></i> <?=$comment->isim;?></p>
+                                        <p><i class="fa fa-user"></i> <?=$comment->isim;?> demiş ki;</p>
                                         <p class="comment-inside"><?=$comment->yorum;?></p>
+                                        <p><?php echo iconv('latin5','utf-8',strftime(' %d %B %Y, %A ',strtotime($comment->eklenme_tarihi)));?></p>
                                     </div>
                                 </div>
                                 <?php } ?>
