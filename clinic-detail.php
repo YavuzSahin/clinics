@@ -57,7 +57,7 @@
                         </div>
                         <h3><span><?=$siteBaslikic;?></span> Şikayetleri</h3>
                         <div class="clinic-detail-slider">
-                            <div class="slick-content sikayet">
+                            <div class="slick-content sikayetn">
                                 <div class="item">
                                     <div class="complain">test içeriği</div>
                                 </div>

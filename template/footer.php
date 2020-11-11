@@ -57,7 +57,7 @@
                 }
             ]
         });
-        $('.sikayet').slick({
+        $('.sikayetn').slick({
             dots: true,
             infinite: true,
             speed: 300,
