@@ -146,10 +146,11 @@ $site = $db->table('site')->where('id', 1)->get();
                                     foreach($html->find('#sideItemRf .pr-item') as $element){
                                         $name   = $element->find('h3', 0)->plaintext;
                                         $url    = seoUrl(strip_tags($element->find('h3', 0)->plaintext));
-                                        $logo   = "https://www.sacekimiburada.com".$element->find('img', 0)->src;
+                                        $logo   = str_replace('/thumb/', '/', "https://www.sacekimiburada.com".$element->find('img', 0)->src);
+                                        echo $logo;
 
                                         copy($logo, '../upload/logo/'.$url.".jpg");
-
+/*
                                         $data = [
                                                 'baslik'                => $name,
                                                 'url'                   => $url,
@@ -166,6 +167,7 @@ $site = $db->table('site')->where('id', 1)->get();
                                         }else{
                                             echo $name . " eklenemedi.";
                                         }
+*/
                                         echo "<br><hr>";
                                     }
                                 }
