@@ -251,6 +251,11 @@ include_once '../controller/function.php';
            $('#baslik-ic').val($('#baslik').val());
         });
 
+        $('#sehir').change(function() {
+            $('#ilce').append(new Option('İlçe Adı', 1));
+        });
+
+
     });
 </script>
 </body>

@@ -41,14 +41,14 @@
                         <input type="text" class="form-control" id="aciklama" name="aciklama" aria-describedby="aciklamaYardim" placeholder="İçerik Açıklaması">
                     </div>
                     <div class="form-group">
-                        <label class="control-label">İçerik</label>
+                        <label class="control-label">Klinik Hakkında</label>
                         <textarea class="form-control" id="editor" name="icerik" rows="20"></textarea>
                     </div>
                   </div>
                   <div class="content-options">
                     <div class="form-group">
-                          <label for="adres">Kategori Linki</label>
-                          <input type="text" class="form-control" id="adres" name="url" aria-describedby="adresYardim" placeholder="İçerik Linki">
+                          <label for="adres">Klinik Linki</label>
+                          <input type="text" class="form-control" id="adres" name="url" aria-describedby="adresYardim" placeholder="Klinik Linki">
                     </div>
                       <div class="form-group">
                           <label for="kelime">Sponsorlu</label>
@@ -59,18 +59,18 @@
                       </div>
                       <div class="form-group">
                           <label for="sehir">İl</label>
-                          <select class="js-example-basic-single" name="sehir">
+                          <select class="js-example-basic-single" id="sehir" name="sehir">
                               <?php
                               $sehirler = $db->table('sehir')->getAll();
                               foreach ($sehirler as $sehir){
                                   ?>
-                                  <option value="<?=$sehir->plaka;?>"><?=$sehir->baslik;?></option>
+                                  <option value="<?=$sehir->plaka;?>"><?=$sehir->sehir;?></option>
                               <?php } ?>
                           </select>
                       </div>
                       <div class="form-group">
                           <label for="ilce">İlçe</label>
-                          <select class="js-example-basic-single" name="ilce">
+                          <select class="js-example-basic-single" id="ilce" name="ilce">
                               <option>Lütfen İl Seçiniz</option>
                           </select>
                       </div>
