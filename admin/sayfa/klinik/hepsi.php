@@ -11,10 +11,10 @@
                         <thead>
                         <tr>
                             <th width="10%">ID</th>
-                            <th width="40%">Klinik Adı</th>
+                            <th width="30%">Klinik Adı</th>
                             <th width="25%" class="hidden-phone">İl</th>
                             <th width="15%" class="hidden-phone">Güncellenme Tarihi</th>
-                            <th width="10%">İşlemler</th>
+                            <th width="20%">İşlemler</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -34,8 +34,8 @@
                                     <?php }else {?>
                                         <a href="klinik.php?s=merkez&p=kaldir&id=<?=$icerik->id;?>" class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></a>
                                     <?php } ?>
-                                    <a href="klinik.php?s=merkez&p=yorum&id=<?=$icerik->id;?>" class="btn btn-danger btn-sm"><i class="fa fa-comments"></i></a>
-                                    <a href="klinik.php?s=merkez&p=sikayet&id=<?=$icerik->id;?>" class="btn btn-danger btn-sm"><i class="fa fa-thumbs-down"></i></a>
+                                    <a href="klinik.php?s=merkez&p=yorum&id=<?=$icerik->id;?>" class="btn btn-primary btn-sm"><i class="fa fa-comments"></i></a>
+                                    <a href="klinik.php?s=merkez&p=sikayet&id=<?=$icerik->id;?>" class="btn btn-info btn-sm"><i class="fa fa-thumbs-down"></i></a>
                                 </td>
                             </tr>
                         <?php } ?>
